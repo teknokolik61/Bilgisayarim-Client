@@ -32,6 +32,7 @@ TIMEOUT /T 10
 cls
 del sophosayarlar.bat
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophosayarlar.bat
+cls
 sophosayarlar.bat
 
 :X86_PROG
@@ -66,6 +67,7 @@ TIMEOUT /T 10
 cls
 del sophosayarlar.bat
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophosayarlar.bat
+cls
 sophosayarlar.bat
 :INSTALL
 
