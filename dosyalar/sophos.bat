@@ -216,7 +216,7 @@ if errorlevel 2 goto :ANAMENU
 if errorlevel 1 goto :AYAR
 
 :ANAMENU
-..\kurulum.bat
+..\Kurulum.bat
 
 :CIKIS
 echo MSGBOX "Güle Güle"  > %systemdrive%\bilgisayarim\bin\TEMPmessage.vbs
