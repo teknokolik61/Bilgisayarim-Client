@@ -216,7 +216,11 @@ if errorlevel 2 goto :ANAMENU
 if errorlevel 1 goto :AYAR
 
 :AYAR
-..\sophos_ayar.bat
+cd %SYSTEMDRIVE%\Bilgisayarim\bin\
+del sophos_ayar.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_ayar.bat
+
+sophos_ayar.bat
 
 :ANAMENU
 ..\Kurulum.bat
