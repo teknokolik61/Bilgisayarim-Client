@@ -6,6 +6,10 @@ del sophos.bat
 
 ::SOPHOS IMPORT
 %SYSTEMDRIVE%\bilgisayarim\bin\Basterzi_Vpn_04.02.2024.tgb
+
+cd %SYSTEMDRIVE%\Bilgisayarim
+
+pause
 CLS
 
 echo ============================================================================================
