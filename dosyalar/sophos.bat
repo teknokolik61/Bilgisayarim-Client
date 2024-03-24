@@ -2,6 +2,7 @@
 SET Sophos_Connect=Sophos\Connect\scvpn.exe
 IF "%PROCESSOR_ARCHITECTURE%" == "x86" GOTO X86_PROG
 IF NOT EXIST "%ProgramFiles(x86)%\%Sophos_Connect%" GOTO INSTALL
+cls
 echo ============================================================================================
 set yy=%date:~-4%
 set mm=%date:~-7,2%
@@ -35,6 +36,7 @@ sophosayarlar.bat
 
 :X86_PROG
 IF NOT EXIST "%ProgramFiles%\%Sophos_Connect%" GOTO INSTALL
+cls
 echo ============================================================================================
 set yy=%date:~-4%
 set mm=%date:~-7,2%
