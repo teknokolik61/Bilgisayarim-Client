@@ -171,13 +171,12 @@ echo.
 echo.
 TIMEOUT /T 10
 cls
-cd %SYSTEMDRIVE%\Bilgisayarim\download\
- SophosConnect Download
+cd %SYSTEMDRIVE%\Bilgisayarim\bin\
+del SophosConnect.msi
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/SophosConnect.msi
 
 msiexec.exe /i %SYSTEMDRIVE%\Bilgisayarim\bin\SophosConnect /QN
 Popd
-Pause
 
 cls
 echo ============================================================================================
@@ -191,20 +190,27 @@ call :Color 6 "  Bilgisayarim Client Kurulumu %ver% - www.miracozturk.com.tr " &
 echo.
 echo.
 echo          OS ADI : %NameOS% %xOS%
-echo        VERS˜iON : %Version%
-echo  islemci Mimarisi: %PROCESSOR_ARCHITECTURE%
+echo        VERS˜YON : %Version%
+echo  ˜LEMCI M˜MAR˜ : %PROCESSOR_ARCHITECTURE%
 echo          PC ADI : %computername%
 echo ============================================================================================
 echo.
+echo Bilgisayariniza Sophos Connect Kurulmuştur.
 echo.
+echo ============================================================================================
 echo.
+call :Color 6 "  [1] Ayarlarını import etmek icin" &echo:
 echo.
-echo Sophos Connect Bilgisayarinizda Kurulmustur.
+call :Color 9 "  [2] Ana menü Donmek icin" &echo:
 echo.
+call :Color 4 "  [3] CIKIS" &echo:
 echo.
+echo ============================================================================================
 echo.
-echo.
-TIMEOUT /T 10
+choice /C:12345 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
+if errorlevel 3 goto :CIKIS
+if errorlevel 2 goto :ANAMENU
+if errorlevel 1 goto :AYAR
 
 ::===============================================================================================================
 :Color_Pre
@@ -218,5 +224,3 @@ mode con: cols=%1 lines=%2
 powershell -noprofile "$W=(get-host).ui.rawui; $B=$W.buffersize; $B.height=%3; $W.buffersize=$B"
 goto :EOF
 ::===============================================================================================================
-
-Popd
