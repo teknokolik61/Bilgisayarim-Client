@@ -30,10 +30,7 @@ echo.
 TIMEOUT /T 10
 cls
 del sophosayarlar.bat
-del sophosayarlar.zip
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe http://miracozturk.com.tr/Kurulum/dosyalar/sophosayarlar.zip
-"C:\bilgisayarim\bin\7-Zip\7z.exe" x  sophosayarlar.zip  -o./ -y -r
-del sophosayarlar.zip
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://github.com/teknokolik61/Bilgisayarim-Client/blob/main/dosyalar/sophosayarlar.bat
 pause
 sophosayarlar.bat
 pause
@@ -68,10 +65,7 @@ echo.
 TIMEOUT /T 10
 cls
 del sophosayarlar.bat
-del sophosayarlar.zip
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe http://miracozturk.com.tr/Kurulum/dosyalar/sophosayarlar.zip
-"C:\bilgisayarim\bin\7-Zip\7z.exe" x  sophosayarlar.zip  -o./ -y -r
-del sophosayarlar.zip
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://github.com/teknokolik61/Bilgisayarim-Client/blob/main/dosyalar/sophosayarlar.bat
 pause
 sophosayarlar.bat
 pause
