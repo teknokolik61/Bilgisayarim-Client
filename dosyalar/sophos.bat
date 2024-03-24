@@ -191,7 +191,7 @@ echo.
 echo.
 echo          OS ADI : %NameOS% %xOS%
 echo        VERS˜YON : %Version%
-echo  ˜LEMCI M˜MAR˜ : %PROCESSOR_ARCHITECTURE%
+echo  iSLEMCi MiMARiSi %PROCESSOR_ARCHITECTURE%
 echo          PC ADI : %computername%
 echo ============================================================================================
 echo.
@@ -201,13 +201,13 @@ echo ===========================================================================
 echo.
 call :Color 6 "  [1] Ayarlarını import etmek icin" &echo:
 echo.
-call :Color 9 "  [2] Ana menü Donmek icin" &echo:
+call :Color 9 "  [2] Ana menU Donmek icin" &echo:
 echo.
 call :Color 4 "  [3] CIKIS" &echo:
 echo.
 echo ============================================================================================
 echo.
-choice /C:12345 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
+choice /C:123 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
 if errorlevel 3 goto :CIKIS
 if errorlevel 2 goto :ANAMENU
 if errorlevel 1 goto :AYAR
