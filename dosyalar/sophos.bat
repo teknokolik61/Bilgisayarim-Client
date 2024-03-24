@@ -1,3 +1,4 @@
+cls
 @echo off
 SET Sophos_Connect=Sophos\Connect\scvpn.exe
 IF "%PROCESSOR_ARCHITECTURE%" == "x86" GOTO X86_PROG
