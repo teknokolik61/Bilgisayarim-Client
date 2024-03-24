@@ -1,4 +1,5 @@
 @echo off
+timeout /T 2
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 del sophos_ayar.bat
 
