@@ -1,7 +1,7 @@
 @echo off
 
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
-del sophos.bas
+del sophos.bat
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/Basterzi_Vpn_04.02.2024.tgb
 
 
