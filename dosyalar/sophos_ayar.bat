@@ -11,7 +11,6 @@ del Basterzi_Vpn_04.02.2024.tgb
 del sophos_ayar_ok.bat
 
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_ayar_ok.bat
-pause
 sophos_ayar_ok.bat
 
 
