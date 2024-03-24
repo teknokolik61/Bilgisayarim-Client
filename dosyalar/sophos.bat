@@ -15,26 +15,27 @@ call :Color 6 "  Bilgisayarim Client Kurulumu %ver% - www.miracozturk.com.tr " &
 echo.
 echo.
 echo          OS ADI : %NameOS% %xOS%
-echo        VERS˜iON : %Version%
-echo  islemci Mimarisi: %PROCESSOR_ARCHITECTURE%
+echo        VERS˜YON : %Version%
+echo  iSLEMCi MiMARiSi %PROCESSOR_ARCHITECTURE%
 echo          PC ADI : %computername%
 echo ============================================================================================
 echo.
+echo Bilgisayariniza Sophos Connect Kurulu
 echo.
+echo ============================================================================================
 echo.
+call :Color 6 "  [1] Ayarlarını import etmek icin" &echo:
 echo.
-call :Color 4 "  Sophos Connect Kurulu Ayarlar Menusu Yonlendiriliyorsunuz " &echo:
+call :Color 9 "  [2] Ana menu Donmek icin" &echo:
 echo.
+call :Color 4 "  [3] CIKIS" &echo:
 echo.
+echo ============================================================================================
 echo.
-echo.
-
-TIMEOUT /T 10
-cls
-del sophosayarlar.bat
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophosayarlar.bat
-cls
-sophosayarlar.bat
+choice /C:123 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
+if errorlevel 3 goto :CIKIS
+if errorlevel 2 goto :ANAMENU
+if errorlevel 1 goto :AYAR
 cls
 :X86_PROG
 IF NOT EXIST "%ProgramFiles%\%Sophos_Connect%" GOTO INSTALL
@@ -50,26 +51,28 @@ call :Color 6 "  Bilgisayarim Client Kurulumu %ver% - www.miracozturk.com.tr " &
 echo.
 echo.
 echo          OS ADI : %NameOS% %xOS%
-echo        VERS˜iON : %Version%
-echo  islemci Mimarisi: %PROCESSOR_ARCHITECTURE%
+echo        VERS˜YON : %Version%
+echo  iSLEMCi MiMARiSi %PROCESSOR_ARCHITECTURE%
 echo          PC ADI : %computername%
 echo ============================================================================================
 echo.
+echo Bilgisayariniza Sophos Connect Kurulu
 echo.
+echo ============================================================================================
 echo.
+call :Color 6 "  [1] Ayarlarını import etmek icin" &echo:
 echo.
-call :Color 4 "  Sophos Connect Kurulu Ayarlar Menusu Yonlendiriliyorsunuz " &echo:
+call :Color 9 "  [2] Ana menu Donmek icin" &echo:
 echo.
+call :Color 4 "  [3] CIKIS" &echo:
 echo.
+echo ============================================================================================
 echo.
-echo.
-
-TIMEOUT /T 10
+choice /C:123 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
+if errorlevel 3 goto :CIKIS
+if errorlevel 2 goto :ANAMENU
+if errorlevel 1 goto :AYAR
 cls
-del sophosayarlar.bat
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophosayarlar.bat
-cls
-sophosayarlar.bat
 :INSTALL
 
 
