@@ -35,7 +35,7 @@ del sophosayarlar.bat
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophosayarlar.bat
 cls
 sophosayarlar.bat
-
+cls
 :X86_PROG
 IF NOT EXIST "%ProgramFiles%\%Sophos_Connect%" GOTO INSTALL
 cls
