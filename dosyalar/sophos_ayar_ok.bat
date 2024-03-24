@@ -1,7 +1,57 @@
 @echo off
-timeout /T 2
-cd %SYSTEMDRIVE%\Bilgisayarim\bin\
-del sophos_ayar.bat
+
+:MAINMENU
+cls
+pushd %~dp0bin\
+Powershell.exe -executionpolicy remotesigned -File disablex.ps1
+call :consize 90 40 90 
+call :Color_Pre
+mode con cols=92 lines=35
+center.exe kF5nJ4D92hfOpc8
+color e
+set "echoRed=powershell -NoProfile write-host -back Black -fore Red"
+set "echoGreen=powershell -NoProfile write-host -back Black -fore Green"
+set "echoGreen1=powershell -NoProfile write-host -back Green -fore Black"
+set "echoYellow=powershell -NoProfile write-host -back Yellow -fore Black"
+setlocal DisableDelayedExpansion
+set Auto=0		  
+set _Debug=0
+set External=1
+set ActWindows=1
+set ActOffice=1
+set AutoR2V=1
+set vNextOverride=1
+set Silent=0
+set Logger=0
+)
+::===============================================================================================================
+:NoProgArgs
+set "_cmdf=%~f0"
+if exist "%SystemRoot%\Sysnative\cmd.exe" if not defined _rel1 (
+setlocal EnableDelayedExpansion
+start %SystemRoot%\Sysnative\cmd.exe /c ""!_cmdf!" -wow %*"
+exit /b
+)
+if exist "%SystemRoot%\SysArm32\cmd.exe" if /i %PROCESSOR_ARCHITECTURE%==AMD64 if not defined _rel2 (
+setlocal EnableDelayedExpansion
+start %SystemRoot%\SysArm32\cmd.exe /c ""!_cmdf!" -arm %*"
+exit /b
+)
+if %External% EQU 1 if "%KMS_IP%"=="%_uIP%" set External=0
+if %Silent% EQU 1 set Unattend=1
+set "_run=nul"
+if %Logger% EQU 1 set _run="%~dpn0_Silent.log"
+if /i "%PROCESSOR_ARCHITECTURE%"=="amd64" set "xOS=x64"
+if /i "%PROCESSOR_ARCHITECTURE%"=="x86" set "xOS=x86"
+if /i "%PROCESSOR_ARCHITECTURE%"=="arm64" set "xOS=arm64"
+for /f "tokens=6 delims=[]. " %%# in ('ver') do set NameOS=%%#
+for /f "skip=2 tokens=2*" %%a in ('reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v ProductName %_Nul6%') do if not errorlevel 1 set "NameOS=%%b"
+) else (
+for /f "tokens=* delims=" %%a in ('powershell -nop -c "(([WMISEARCHER]'Select Caption from Win32_OperatingSystem').Get()).Caption"') do set "NameOS=%%a"
+)
+for /f "tokens=* delims=" %%a in ('powershell -nop -c "(([WMISEARCHER]'Select Version from Win32_OperatingSystem').Get()).Version"') do set "Version=%%a"
+title Bilgisayarim Client Mirac OZTURK %ver%
+mode con cols=92 lines=35
 
 echo ============================================================================================
 set yy=%date:~-4%
@@ -21,24 +71,6 @@ echo ===========================================================================
 echo.
 call :Color 6 "  [1] FULL KURULUM" &echo:
 echo.
-call :Color 6 "  [2] SOPHOS CLIENT KURULUMU" &echo:
-echo.
-call :Color 9 "  [3] DOMAIN KATILMAK" &echo:
-echo.
-call :Color 2 "  [4] DESKTOP MANAGER INSTALL" &echo:
-echo.
-call :Color 4 "  [5] CIKIS" &echo:
-echo.
-echo ============================================================================================
-echo.
-choice /C:12345 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
-if errorlevel 5 goto :CIKIS
-if errorlevel 4 goto :DESKTOP
-if errorlevel 3 goto :DOMAIN
-if errorlevel 2 goto :SOPHOS
-if errorlevel 1 goto :FULL
-pause
-
 
 
 
