@@ -14,13 +14,28 @@ echo.
 echo.
 echo          OS ADI : %NameOS% %xOS%
 echo        VERS˜YON : %Version%
-echo  iSLEMCi MiMARiSi %PROCESSOR_ARCHITECTURE%
+echo  ˜LEMCI M˜MAR˜ : %PROCESSOR_ARCHITECTURE%
 echo          PC ADI : %computername%
 echo ============================================================================================
 echo.
-call :Color 6 "   AYARLARINI IMPORT EDILDI" &echo:
+call :Color 6 "  [1] FULL KURULUM" &echo:
+echo.
+call :Color 6 "  [2] SOPHOS CLIENT KURULUMU" &echo:
+echo.
+call :Color 9 "  [3] DOMAIN KATILMAK" &echo:
+echo.
+call :Color 2 "  [4] DESKTOP MANAGER INSTALL" &echo:
+echo.
+call :Color 4 "  [5] CIKIS" &echo:
 echo.
 echo ============================================================================================
+echo.
+choice /C:12345 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
+if errorlevel 5 goto :CIKIS
+if errorlevel 4 goto :DESKTOP
+if errorlevel 3 goto :DOMAIN
+if errorlevel 2 goto :SOPHOS
+if errorlevel 1 goto :FULL
 pause
 
 
