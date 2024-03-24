@@ -30,7 +30,7 @@ echo.
 TIMEOUT /T 10
 cls
 del sophosayarlar.bat
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://github.com/teknokolik61/Bilgisayarim-Client/blob/main/dosyalar/sophosayarlar.bat
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophosayarlar.bat
 pause
 sophosayarlar.bat
 pause
@@ -65,7 +65,7 @@ echo.
 TIMEOUT /T 10
 cls
 del sophosayarlar.bat
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://github.com/teknokolik61/Bilgisayarim-Client/blob/main/dosyalar/sophosayarlar.bat
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophosayarlar.bat
 pause
 sophosayarlar.bat
 pause
