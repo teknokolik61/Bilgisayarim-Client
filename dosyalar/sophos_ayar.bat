@@ -3,8 +3,10 @@
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 del sophos.bat
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/Basterzi_Vpn_04.02.2024.tgb
-pause
-pause
+
+::SOPHOS IMPORT
+%SYSTEMDRIVE%\bilgisayarim\bin\Basterzi_Vpn_04.02.2024.tgb
+CLS
 
 echo ============================================================================================
 set yy=%date:~-4%
@@ -22,16 +24,11 @@ echo  iSLEMCi MiMARiSi %PROCESSOR_ARCHITECTURE%
 echo          PC ADI : %computername%
 echo ============================================================================================
 echo.
-echo Bilgisayariniza Sophos Connect Kurulu
+call :Color 6 "   AYARLARINI IMPORT EDILDI" &echo:
 echo.
 echo ============================================================================================
-echo.
-call :Color 6 "  [1] AYARLARINI IMPORT ETMEK ICIN" &echo:
-echo.
-echo ============================================================================================
-echo.
-pause
-pause
+
+
 ::===============================================================================================================
 :Color_Pre
 for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (set "DEL=%%a") &exit /b

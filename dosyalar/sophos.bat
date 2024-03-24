@@ -221,7 +221,7 @@ del sophos_ayar.bat
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_ayar.bat
 
 sophos_ayar.bat
-
+cls
 :ANAMENU
 ..\Kurulum.bat
 
