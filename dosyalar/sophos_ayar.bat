@@ -54,10 +54,10 @@ echo ===========================================================================
 call :Color 5 "  SOPHOS CALISTIRILDI GIRIS YAPIN " &echo:
 echo ============================================================================================
 echo.
-call :Color 4 "   ################################################################" &echo:
-call :Color 4 "   #                SOPHOS AÇILMADI İSE SAĞ ALT KOSEDE MAVİ       #" &echo:
-call :Color 4 "   #                YUVARLAK İÇİNDE C BASIN VE GİRİS YAPIN        #" &echo:
-call :Color 4 "   ################################################################" &echo:
+call :Color 4 "   " &echo:
+call :Color 4 "                   SOPHOS AÇILMADI İSE SAĞ ALT KOSEDE MAVİ       " &echo:
+call :Color 4 "                   YUVARLAK İÇİNDE C BASIN VE GİRİS YAPIN        " &echo:
+call :Color 4 "   " &echo:
 echo.
 echo ============================================================================================
 TIMEOUT /T 10
