@@ -34,32 +34,7 @@ cd C:\Program Files (x86)\Sophos\Connect\GUI\
 start scgui.exe
 start scgui.exe
 
-echo ============================================================================================
-set yy=%date:~-4%
-set mm=%date:~-7,2%
-set dd=%date:~-10,2%
-for /f "tokens=1-2 delims=/:" %%a in ('time /t') do (set mytime=%%a:%%b)
-echo                                                           	     %dd%.%mm%.%yy% ^- %mytime%
-echo.
-call :Color 6 "  Bilgisayarim Client Kurulumu %ver% - www.miracozturk.com.tr " &echo:
-echo.
-echo.
-echo          OS ADI : %NameOS% %xOS%
-echo        VERS˜YON : %Version%
-echo  iSLEMCi MiMARiSi %PROCESSOR_ARCHITECTURE%
-echo          PC ADI : %computername%
-echo.
-echo.
-echo ============================================================================================
-call :Color 5 "  SOPHOS CALISTIRILDI GIRIS YAPIN " &echo:
-echo ============================================================================================
-echo.
-call :Color 4 "   " &echo:
-call :Color 4 "                   SOPHOS AÇILMADI İSE SAĞ ALT KOSEDE MAVİ       " &echo:
-call :Color 4 "                   YUVARLAK İÇİNDE C BASIN VE GİRİS YAPIN        " &echo:
-call :Color 4 "   " &echo:
-echo.
-echo ============================================================================================
+
 TIMEOUT /T 10
 
 
