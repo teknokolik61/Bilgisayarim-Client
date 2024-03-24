@@ -173,9 +173,12 @@ TIMEOUT /T 10
 cls
 cd %SYSTEMDRIVE%\Bilgisayarim\download\
  SophosConnect Download
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe http://miracozturk.com.tr/Kurulum/dosyalar/SophosConnect.msi
-cls
-msiexec.exe /i %SYSTEMDRIVE%\Bilgisayarim\download\SophosConnect /QN
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/SophosConnect.msi
+
+msiexec.exe /i %SYSTEMDRIVE%\Bilgisayarim\bin\SophosConnect /QN
+Popd
+Pause
+
 cls
 echo ============================================================================================
 set yy=%date:~-4%
