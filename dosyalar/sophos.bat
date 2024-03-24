@@ -24,15 +24,15 @@ echo Bilgisayariniza Sophos Connect Kurulu
 echo.
 echo ============================================================================================
 echo.
-call :Color 6 "  [1] Ayarlarını import etmek icin" &echo:
+call :Color 6 "  [1] AYARLARINI IMPORT ETMEK ICIN" &echo:
 echo.
-call :Color 9 "  [2] Ana menu Donmek icin" &echo:
+call :Color 9 "  [2] ANA MENU DONMEK ICIN" &echo:
 echo.
 call :Color 4 "  [3] CIKIS" &echo:
 echo.
 echo ============================================================================================
 echo.
-choice /C:123 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
+choice /C:123 /N /M "SECIMINIZI YAPIN :"
 if errorlevel 3 goto :CIKIS
 if errorlevel 2 goto :ANAMENU
 if errorlevel 1 goto :AYAR
@@ -60,15 +60,15 @@ echo Bilgisayariniza Sophos Connect Kurulu
 echo.
 echo ============================================================================================
 echo.
-call :Color 6 "  [1] Ayarlarını import etmek icin" &echo:
+call :Color 6 "  [1] AYARLARINI IMPORT ETMEK ICIN" &echo:
 echo.
-call :Color 9 "  [2] Ana menu Donmek icin" &echo:
+call :Color 9 "  [2] ANA MENU DONMEK ICIN" &echo:
 echo.
 call :Color 4 "  [3] CIKIS" &echo:
 echo.
 echo ============================================================================================
 echo.
-choice /C:123 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
+choice /C:123 /N /M "SECIMINIZI YAPIN :"
 if errorlevel 3 goto :CIKIS
 if errorlevel 2 goto :ANAMENU
 if errorlevel 1 goto :AYAR
@@ -202,15 +202,15 @@ echo Bilgisayariniza Sophos Connect Kurulmuştur.
 echo.
 echo ============================================================================================
 echo.
-call :Color 6 "  [1] Ayarlarını import etmek icin" &echo:
+call :Color 6 "  [1] AYARLARINI IMPORT ETMEK ICIN" &echo:
 echo.
-call :Color 9 "  [2] Ana menU Donmek icin" &echo:
+call :Color 9 "  [2] ANA MENU DONMEK ICIN" &echo:
 echo.
 call :Color 4 "  [3] CIKIS" &echo:
 echo.
 echo ============================================================================================
 echo.
-choice /C:123 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
+choice /C:123 /N /M "SECIMINIZI YAPIN :"
 if errorlevel 3 goto :CIKIS
 if errorlevel 2 goto :ANAMENU
 if errorlevel 1 goto :AYAR
