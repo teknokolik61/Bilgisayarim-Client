@@ -215,11 +215,14 @@ if errorlevel 3 goto :CIKIS
 if errorlevel 2 goto :ANAMENU
 if errorlevel 1 goto :AYAR
 
+:AYAR
+..\sophos_ayar.bat
+
 :ANAMENU
 ..\Kurulum.bat
 
 :CIKIS
-echo MSGBOX "Güle Güle"  > %systemdrive%\bilgisayarim\bin\TEMPmessage.vbs
+echo MSGBOX "GULE GULE"  > %systemdrive%\bilgisayarim\bin\TEMPmessage.vbs
 TEMPmessage.vbs
 mode con cols=55 lines=4
 echo.
