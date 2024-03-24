@@ -21,7 +21,7 @@ echo.
 echo.
 echo.
 echo.
-echo  Sophos Connect Kurulu Ayarlar Menusu Yonlendiriliyorsunuz
+call :Color 4 "  Sophos Connect Kurulu Ayarlar Menusu Yonlendiriliyorsunuz " &echo:
 echo.
 echo.
 echo.
@@ -31,9 +31,7 @@ TIMEOUT /T 10
 cls
 del sophosayarlar.bat
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophosayarlar.bat
-pause
 sophosayarlar.bat
-pause
 
 :X86_PROG
 IF NOT EXIST "%ProgramFiles%\%Sophos_Connect%" GOTO INSTALL
@@ -56,7 +54,7 @@ echo.
 echo.
 echo.
 echo.
-echo  Sophos Connect Kurulu Ayarlar Menusu Yonlendiriliyorsunuz
+call :Color 4 "  Sophos Connect Kurulu Ayarlar Menusu Yonlendiriliyorsunuz " &echo:
 echo.
 echo.
 echo.
@@ -66,9 +64,7 @@ TIMEOUT /T 10
 cls
 del sophosayarlar.bat
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophosayarlar.bat
-pause
 sophosayarlar.bat
-pause
 :INSTALL
 
 
