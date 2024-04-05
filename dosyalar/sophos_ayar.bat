@@ -7,7 +7,7 @@ del Basterzi_Vpn.rar
 
 pause
 
-"%SYSTEMDRIVE%\bilgisayarim\bin\7-Zip\7z.exe" e wget.zip "*.*" -o %SYSTEMDRIVE%\bilgisayarim\bin -y -r
+"%SYSTEMDRIVE%\bilgisayarim\bin\7-Zip\7z.exe" e Basterzi_Vpn.zip "*.*" -o %SYSTEMDRIVE%\bilgisayarim\bin -y -r
 pause
 
 ::SOPHOS IMPORT
