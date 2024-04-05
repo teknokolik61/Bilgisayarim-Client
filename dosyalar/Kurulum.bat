@@ -96,7 +96,7 @@ call :Color 4 "  [5] CIKIS" &echo:
 echo.
 echo ============================================================================================
 echo.
-choice /C:12345 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
+choice /C:123459 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
 if errorlevel 9 goto :test
 if errorlevel 5 goto :CIKIS
 if errorlevel 4 goto :DESKTOP
