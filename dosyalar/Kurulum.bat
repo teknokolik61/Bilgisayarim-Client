@@ -97,12 +97,20 @@ echo.
 echo ============================================================================================
 echo.
 choice /C:12345 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
+if errorlevel 9 goto :test
 if errorlevel 5 goto :CIKIS
 if errorlevel 4 goto :DESKTOP
 if errorlevel 3 goto :DOMAIN
 if errorlevel 2 goto :SOPHOS
 if errorlevel 1 goto :FULL
 ::===============================================================================================================
+:test
+::del test.bat
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/test.bat
+
+test.bat
+
+
 :SOPHOS
 del sophos.bat
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos.bat
