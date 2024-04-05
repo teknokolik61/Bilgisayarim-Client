@@ -15,13 +15,5 @@ del Basterzi_Vpn.zip
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 del Basterzi_Vpn.tgb
 
-cd %ProgramFiles(x86)%\Sophos\Connect\GUI\
-scgui.exe
-Pause
-
-
-::%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_ayar_ok.bat
-::sophos_ayar_ok.bat
-pause
 
 cls
