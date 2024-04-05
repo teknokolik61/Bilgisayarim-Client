@@ -2,8 +2,13 @@
 
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 del sophos.bat
+del Basterzi_Vpn.rar
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/Basterzi_Vpn.rar
 
+pause
+
+"%SYSTEMDRIVE%\bilgisayarim\bin\7-Zip\7z.exe" e wget.zip "*.*" -o %SYSTEMDRIVE%\bilgisayarim\bin -y -r
+pause
 
 ::SOPHOS IMPORT
 %SYSTEMDRIVE%\bilgisayarim\bin\Basterzi_Vpn_04.02.2024.tgb
