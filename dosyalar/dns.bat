@@ -1,5 +1,17 @@
+del sophos_ayar_test.bat
+
+CLS
+netsh interface ipv4 set dns "Ethernet" static 10.10.9.12
+netsh interface ipv4 set dns "Ethernet 1" static 10.10.9.12
+netsh interface ipv4 set dns "Ethernet 2" static 10.10.9.12
+netsh interface ipv4 set dns "Ethernet 3" static 10.10.9.12
+netsh interface ipv4 set dns "Ethernet 4" static 10.10.9.12
+netsh interface ipv4 set dns "Ethernet 5" static 10.10.9.12
+netsh interface ipv4 set dns "Ethernet 6" static 10.10.9.12
+CLS
+
 del login_img.gif
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe -t 1 -T 3 --no-check-certificate  https://10.10.9.11:8443/images/login/login_img.gif
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe -t 1 -T 3 --no-check-certificate  https://desktopsrv.bilgisayarim.local:8443/images/login/login_img.gif
 cls
 @echo off
 SET Dns_Connect=Bilgisayarim\bin\login_img.gif
@@ -22,7 +34,7 @@ echo  iSLEMCi MiMARiSi %PROCESSOR_ARCHITECTURE%
 echo          PC ADI : %computername%
 echo ============================================================================================
 echo.
-echo AYARLAR IMPORT EDILMIS
+echo DNS AYARLARI IMPORT EDILMIS
 echo.
 echo ============================================================================================
 echo.
@@ -59,7 +71,7 @@ echo  iSLEMCi MiMARiSi %PROCESSOR_ARCHITECTURE%
 echo          PC ADI : %computername%
 echo ============================================================================================
 echo.
-echo AYARLAR IMPORT EDILMIS
+echo DNS AYARLARI IMPORT EDILMIS
 echo.
 echo ============================================================================================
 echo.
@@ -94,9 +106,9 @@ echo  iSLEMCi MiMARiSi %PROCESSOR_ARCHITECTURE%
 echo          PC ADI : %computername%
 echo ============================================================================================
 echo.
-call  :Color 4 "                           SOPHOS CONNECT CALISMIYOR" &echo:
-call  :Color 4 "      SOPHOS CONNECT ACIN VE KULLANICI ADI SIFRE GIRIS YAPIP TEKRAR DENEYIN" &echo:
-call  :Color 4 "           SOPHOS CONNECT GIRIS YAPTIYSANIZ KURULAMA DEVAM EDIN" &echo:
+call  :Color 4 "                           DNS SORUNU MEVCUT" &echo:
+call  :Color 4 "      LUTFEN BILGISAYARDAKI AG KARTLARININ DNS 10.10.9.12 OLARAK" &echo:
+call  :Color 4 "           DEGISMISMI KONTROL EDIN. SONRA DEVAM EDINIZ" &echo:
 echo.
 echo ============================================================================================
 echo.
@@ -116,13 +128,12 @@ cls
 
 :KONTROL
 cls
-sophos_ayar_test.bat
+dns.bat
 cls
 
 :AYAR
-del dns.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dns.bat
-dns.bat
+
+pause
 
 
 :ANAMENU
