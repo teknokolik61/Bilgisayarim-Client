@@ -37,6 +37,7 @@ if errorlevel 3 goto :CIKIS
 if errorlevel 2 goto :ANAMENU
 if errorlevel 1 goto :AYAR
 cls
+
 :X86_PROG
 IF NOT EXIST "%ProgramFiles%\%Sophos_Connect%" GOTO INSTALL
 cls
@@ -73,9 +74,8 @@ if errorlevel 3 goto :CIKIS
 if errorlevel 2 goto :ANAMENU
 if errorlevel 1 goto :AYAR
 cls
+
 :INSTALL
-
-
 <!-- : Begin batch script
 @echo off
 @setlocal DisableDelayedExpansion
