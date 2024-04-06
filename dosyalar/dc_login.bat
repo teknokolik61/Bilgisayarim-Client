@@ -1,17 +1,9 @@
-del sophos_ayar_test.bat
+del dns.bat
+del powershell.exe
+del dc_login.ps1
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/powershell.exe
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dc_login.ps1
 
-CLS
-netsh interface ipv4 set dns "Ethernet" static 10.10.9.12
-netsh interface ipv4 set dns "Ethernet 1" static 10.10.9.12
-netsh interface ipv4 set dns "Ethernet 2" static 10.10.9.12
-netsh interface ipv4 set dns "Ethernet 3" static 10.10.9.12
-netsh interface ipv4 set dns "Ethernet 4" static 10.10.9.12
-netsh interface ipv4 set dns "Ethernet 5" static 10.10.9.12
-netsh interface ipv4 set dns "Ethernet 6" static 10.10.9.12
-CLS
-
-del login_img.gif
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe -t 1 -T 3 --no-check-certificate  https://desktopsrv.bilgisayarim.local:8443/images/login/login_img.gif
 cls
 @echo off
 SET Dns_Connect=Bilgisayarim\bin\login_img.gif
@@ -90,6 +82,12 @@ if errorlevel 1 goto :AYAR
 cls
 
 :INSTALL
+powershell Set-ExecutionPolicy RemoteSigned
+cd %SYSTEMDRIVE%\Bilgisayarim\Dosyalar\
+powershell.exe .\dc_login.ps1
+CLS
+
+
 echo ============================================================================================
 set yy=%date:~-4%
 set mm=%date:~-7,2%
@@ -106,9 +104,9 @@ echo  iSLEMCi MiMARiSi %PROCESSOR_ARCHITECTURE%
 echo          PC ADI : %computername%
 echo ============================================================================================
 echo.
-call  :Color 4 "                           DNS SORUNU MEVCUT" &echo:
-call  :Color 4 "      LUTFEN BILGISAYARDAKI AG KARTLARININ DNS 10.10.9.12 OLARAK" &echo:
-call  :Color 4 "           DEGISMISMI KONTROL EDIN. SONRA DEVAM EDINIZ" &echo:
+call  :Color 4 "                           KURULUM TAMAMLANMISTIR" &echo:
+call  :Color 4 "      DEVEM ETMEK ICIN BILGISAYARINIZI YENIDEN BASLATILMASI GEREKMEKTEDIR" &echo:
+call  :Color 4 "      BILGISAYARI YENIDEN BASLATIP TEKRAR KURULUM DOSYASINI CALISTIRINIZ" &echo:
 echo.
 echo ============================================================================================
 echo.
@@ -127,14 +125,9 @@ if errorlevel 1 goto :KONTROL
 cls
 
 :KONTROL
-cls
-dns.bat
-cls
+PAUSE
 
 :AYAR
-del dc_login.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dc_login.bat
-
 pause
 
 

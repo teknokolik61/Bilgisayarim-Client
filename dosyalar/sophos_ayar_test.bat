@@ -1,3 +1,4 @@
+del sophos_ayar.bat
 del login_img.gif
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe -t 1 -T 3 --no-check-certificate  https://10.10.9.11:8443/images/login/login_img.gif
 cls

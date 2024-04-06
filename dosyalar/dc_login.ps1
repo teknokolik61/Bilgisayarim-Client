@@ -1,0 +1,1 @@
+﻿Add-Computer -DomainName bilgisayarim.local -OUPath "OU=Basterzi_Computers,OU=basterzi,OU=Ofisler,DC=bilgisayarim,DC=local" -Credential (Get-Credential)
