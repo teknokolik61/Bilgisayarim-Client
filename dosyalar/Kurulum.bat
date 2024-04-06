@@ -84,7 +84,7 @@ echo  ˜žLEMCI M˜MAR˜ : %PROCESSOR_ARCHITECTURE%
 echo          PC ADI : %computername%
 echo ============================================================================================
 echo.
-echo             [1] FULL KURULUM" &echo:
+echo             [1] FULL KURULUM" 
 echo.
 call :Color 6 "  [2] SOPHOS CLIENT KURULUMU" &echo:
 echo.
