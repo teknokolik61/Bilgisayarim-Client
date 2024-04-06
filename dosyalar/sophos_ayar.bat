@@ -15,8 +15,7 @@ del Basterzi_Vpn.zip
 xcopy /h "%SYSTEMDRIVE%\Bilgisayarim\bin\Basterzi_Vpn.tgb" "%ProgramFiles(x86)%\Sophos\Connect\import" 
 del Basterzi_Vpn.tgb
 
-del sophos_ayar_test
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos.bat
-sophos.bat
-pause
+del sophos_ayar_test.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_ayar_test.bat
+sophos_ayar_test.bat
 cls
