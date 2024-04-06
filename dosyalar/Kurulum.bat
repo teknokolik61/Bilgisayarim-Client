@@ -1,3 +1,4 @@
+del sophos_ayar.bat
 <!-- : Begin batch script
 @echo off
 @setlocal DisableDelayedExpansion
