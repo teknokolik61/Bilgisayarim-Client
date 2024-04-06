@@ -120,10 +120,8 @@ sophos_ayar_test.bat
 cls
 
 :ETKI
-cd %SYSTEMDRIVE%\Bilgisayarim\bin\
-del SophosConnect.msi
-del sophos_ayar_test.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_ayar.bat
+test
+pause
 
 sophos_ayar.bat
 cls
