@@ -26,7 +26,7 @@ echo AYARLAR IMPORT EDILMIS
 echo.
 echo ============================================================================================
 echo.
-call :Color 6 "  [1] BILGISAYARINIZ ETKI ALINANA EKLEMEK ICIN" &echo:
+call :Color 6 "  [1] KURULUMA DEVAM ETMEK ICIN" &echo:
 echo.
 call :Color 9 "  [2] ANA MENU DONMEK ICIN" &echo:
 echo.
@@ -63,7 +63,7 @@ echo AYARLAR IMPORT EDILMIS
 echo.
 echo ============================================================================================
 echo.
-call :Color 6 "  [1] BILGISAYARINIZ ETKI ALINANA EKLEMEK ICIN" &echo:
+call :Color 6 "  [1] KURULUMA DEVAM ETMEK ICIN" &echo:
 echo.
 call :Color 9 "  [2] ANA MENU DONMEK ICIN" &echo:
 echo.
