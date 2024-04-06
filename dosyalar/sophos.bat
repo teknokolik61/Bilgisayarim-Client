@@ -217,6 +217,7 @@ if errorlevel 1 goto :AYAR
 
 :AYAR
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
+del SophosConnect.msi
 del sophos_ayar.bat
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_ayar.bat
 

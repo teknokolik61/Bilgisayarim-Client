@@ -15,5 +15,5 @@ del Basterzi_Vpn.zip
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 del Basterzi_Vpn.tgb
 
-
+sophos_ayar_test.bat
 cls
