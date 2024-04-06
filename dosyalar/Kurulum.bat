@@ -114,11 +114,13 @@ if errorlevel 1 goto :FULL
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/test.bat
 test.bat
 :DOMAIN
+cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 del sophos_ayar_test.bat
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_ayar_test.bat
 sophos_ayar_test.bat
 pause
 :SOPHOS
+cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 del sophos.bat
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos.bat
 sophos.bat
