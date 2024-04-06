@@ -112,26 +112,19 @@ if errorlevel 1 goto :FULL
 :test
 ::del test.bat
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/test.bat
-
 test.bat
-
 :DOMAIN
 del sophos_ayar_test.bat
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_ayar_test.bat
 sophos_ayar_test.bat
 pause
-
 :SOPHOS
 del sophos.bat
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos.bat
-
 sophos.bat
 pause
-
 :FULL
 cls
-
-
 ::===============================================================================================================
 :CIKIS
 echo MSGBOX "Güle Güle"  > %systemdrive%\bilgisayarim\bin\TEMPmessage.vbs
