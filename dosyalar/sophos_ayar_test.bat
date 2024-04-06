@@ -94,9 +94,9 @@ echo  iSLEMCi MiMARiSi %PROCESSOR_ARCHITECTURE%
 echo          PC ADI : %computername%
 echo ============================================================================================
 echo.
-call  :Color 4 "                           SOPHOS CONNECT CALISMIYOR
-call  :Color 4 "      SOPHOS CONNECT ACIN VE KULLANICI ADI SIFRE GIRIS YAPIP TEKRAR DENEYIN
-call  :Color 4 "           SOPHOS CONNECT GIRIS YAPTIYSANIZ KURULAMA DEVAM EDIN
+call  :Color 4 "                           SOPHOS CONNECT CALISMIYOR" &echo:
+call  :Color 4 "      SOPHOS CONNECT ACIN VE KULLANICI ADI SIFRE GIRIS YAPIP TEKRAR DENEYIN" &echo:
+call  :Color 4 "           SOPHOS CONNECT GIRIS YAPTIYSANIZ KURULAMA DEVAM EDIN" &echo:
 echo.
 echo ============================================================================================
 echo.
