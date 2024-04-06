@@ -17,6 +17,7 @@ cls
 SET Dns_Connect=Bilgisayarim\bin\login_img.gif
 IF "%PROCESSOR_ARCHITECTURE%" == "x86" GOTO X86_PROG
 IF NOT EXIST "%SYSTEMDRIVE%\%Dns_Connect%" GOTO INSTALL
+del login_img.gif
 cls
 echo ============================================================================================
 set yy=%date:~-4%
@@ -54,6 +55,7 @@ cls
 
 :X86_PROG
 IF NOT EXIST "%ProgramFiles%\%Sophos_Connect%" GOTO INSTALL
+del login_img.gif
 cls
 echo ============================================================================================
 set yy=%date:~-4%
@@ -132,6 +134,7 @@ dns.bat
 cls
 
 :AYAR
+del login_img.gif
 del dc_login.bat
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dc_login.bat
 
