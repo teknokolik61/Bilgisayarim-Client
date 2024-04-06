@@ -1,5 +1,5 @@
 del dns.exe
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe -t 1 -T 3  https://10.10.12.4:6262/web_images/dns.exe
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe -t 1 -T 3 --no-check-certificate  https://10.10.12.4:6262/web_images/dns.exe
 cls
 @echo off
 SET Dns_Connect=Bilgisayarim\bin\dns.exe
