@@ -115,6 +115,7 @@ if errorlevel 1 goto :KONTROL
 cls
 
 :KONTROL
+cls
 sophos_ayar_test.bat
 cls
 
