@@ -29,7 +29,7 @@ echo.
 echo.
 echo.
 echo.
-TIMEOUT /T 5
+TIMEOUT /T 10
 cls
 del sophos_ayar.bat
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_ayar.bat
@@ -64,7 +64,7 @@ echo.
 echo.
 echo.
 echo.
-TIMEOUT /T 5
+TIMEOUT /T 10
 cls
 del sophos_ayar.bat
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_ayar.bat
@@ -168,7 +168,7 @@ echo.
 echo.
 echo.
 echo.
-TIMEOUT /T 5
+TIMEOUT /T 10
 cls
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 del SophosConnect.msi

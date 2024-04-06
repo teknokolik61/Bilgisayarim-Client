@@ -111,6 +111,9 @@ if errorlevel 9 goto :test
 
 test.bat
 
+:DOMAIN
+del sophos_ayar_test.bat
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_ayar_test.bat
 
 :SOPHOS
 del sophos.bat
