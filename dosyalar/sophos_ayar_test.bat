@@ -37,7 +37,7 @@ echo.
 choice /C:123 /N /M "SECIMINIZI YAPIN :"
 if errorlevel 3 goto :CIKIS
 if errorlevel 2 goto :ANAMENU
-if errorlevel 1 goto :ETKI
+if errorlevel 1 goto :AYAR
 cls
 
 :X86_PROG
@@ -74,7 +74,7 @@ echo.
 choice /C:123 /N /M "SECIMINIZI YAPIN :"
 if errorlevel 3 goto :CIKIS
 if errorlevel 2 goto :ANAMENU
-if errorlevel 1 goto :ETKI
+if errorlevel 1 goto :AYAR
 cls
 
 :INSTALL
@@ -119,7 +119,7 @@ cls
 sophos_ayar_test.bat
 cls
 
-:ETKI
+:AYAR
 test
 pause
 
