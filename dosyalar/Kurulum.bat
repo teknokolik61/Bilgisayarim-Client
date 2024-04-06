@@ -1,4 +1,6 @@
+cd %SYSTEMDRIVE%\Bilgisayarim\Bin
 del sophos_ayar.bat
+del sophos_ayar_test.bat
 <!-- : Begin batch script
 @echo off
 @setlocal DisableDelayedExpansion
@@ -116,14 +118,16 @@ test.bat
 :DOMAIN
 del sophos_ayar_test.bat
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_ayar_test.bat
+sophos_ayar_test.bat
+pause
 
 :SOPHOS
 del sophos.bat
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos.bat
 
 sophos.bat
-
 pause
+
 :FULL
 cls
 

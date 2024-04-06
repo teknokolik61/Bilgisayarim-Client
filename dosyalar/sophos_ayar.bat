@@ -34,7 +34,7 @@ echo.
 echo.
 echo.
 echo.
-call :Color 2 "   Ayarlar import edilecektir " &echo:
+call :Color 2 "   Ayarlar import edildi " &echo:
 call :Color 2 "   Ana Sayfaya Yonlendiriliyorsunuz " &echo:
 echo.
 echo.
