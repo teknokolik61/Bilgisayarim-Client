@@ -12,8 +12,14 @@ cls
 del Sunucu_Vpn.zip
 ::SOPHOS IMPORT
 
-xcopy /h "%SYSTEMDRIVE%\Bilgisayarim\bin\Sunucu_Vpn.scx" "%ProgramFiles(x86)%\Sophos\Connect\import" 
+cd %ProgramFiles(x86)%\Sophos\Connect\import
+del ayar.txt
+cd %SYSTEMDRIVE%\Bilgisayarim\bin
+
+xcopy /h "%SYSTEMDRIVE%\Bilgisayarim\bin\Sunucu_Vpn.scx" "%ProgramFiles(x86)%\Sophos\Connect\import"
+xcopy /h "%SYSTEMDRIVE%\Bilgisayarim\bin\ayar.txt" "%ProgramFiles(x86)%\Sophos\Connect\import" 
 del Sunucu_Vpn.scx
+del ayar.txt
 cls
 
 echo ============================================================================================
@@ -36,13 +42,17 @@ echo.
 echo.
 echo.
 call :Color 2 "   Ayarlar import edildi " &echo:
-call :Color 2 "   Ana Sayfaya Yonlendiriliyorsunuz " &echo:
+call :Color 2 "   Kontrol Sayfaya Yonlendiriliyorsunuz " &echo:
 echo.
 echo.
 echo.
 echo.
 TIMEOUT /T 10
-..\Kurulum.bat
+del sophos_import_kontrol.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_import_kontrol.bat
+sophos_import_kontrol.bat
+
+
 
 ::===============================================================================================================
 :Color_Pre
