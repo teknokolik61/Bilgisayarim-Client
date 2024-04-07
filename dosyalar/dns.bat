@@ -47,6 +47,7 @@ TIMEOUT /T 10
 cls
 del login_img.gif
 del dc_login.bat
+cd %SYSTEMDRIVE%\Bilgisayarim\Bin\
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dc_login.bat
 dc_login.bat
 cls
