@@ -1,14 +1,26 @@
 del dc_login.bat
 
 @echo off
+FOR /F "usebackq tokens=*" %%a IN (`wmic.exe COMPUTERSYSTEM GET DOMAIN /Value`) DO (
+      @((ECHO %%a | findstr /i /c:"Domain=") && SET _str=%%a) > NUL 2>&1
+)
+FOR /F "tokens=2 delims=^=" %%a IN ("%_str%") do SET _computerDomain=%%a
+SET _computerDomain=%_computerDomain: =%
+SET _fqdn=%COMPUTERNAME%.%_computerDomain%
+SET _fqdn2=%_computerDomain%
+echo %_fqdn%
+echo %_fqdn2%
+
+
+
+
 SET Domain_Kontrol=bilgisayarim.local
-IF "%_computerDomain%" == "bilgisayarim.local" GOTO bilgisayarim.local
+IF "%_fqdn2%" == "bilgisayarim.local" GOTO bilgisayarim.local
 IF NOT EXIST "%Domain_Kontrol%" GOTO INSTALL
 
 
 :bilgisayarim.local
 
-IF NOT EXIST "%Domain_Kontrol%" GOTO INSTALL
 cls
 echo ============================================================================================
 set yy=%date:~-4%
