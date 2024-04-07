@@ -47,7 +47,7 @@ echo.
 echo.
 echo.
 echo.
-TIMEOUT /T 10
+TIMEOUT /T 5
 del sophos_import_kontrol.bat
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_import_kontrol.bat
 sophos_import_kontrol.bat

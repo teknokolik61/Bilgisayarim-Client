@@ -1,5 +1,5 @@
 del sophos_ayar.bat
-
+cls
 @echo off
 SET Dns_Connect=Sophos\Connect\import\ayar.txt
 IF "%PROCESSOR_ARCHITECTURE%" == "x86" GOTO X86_PROG
@@ -31,7 +31,7 @@ echo.
 echo.
 echo.
 echo.
-TIMEOUT /T 10
+TIMEOUT /T 5
 ..\Kurulum.bat
 
 :X86_PROG
@@ -63,7 +63,7 @@ echo.
 echo.
 echo.
 echo.
-TIMEOUT /T 10
+TIMEOUT /T 5
 ..\Kurulum.bat
 
 :INSTALL
@@ -85,7 +85,7 @@ echo ===========================================================================
 echo.
 call  :Color 9 "              VPN AYARLARINDA SORUN MEVCUT" &echo:
 call  :Color 9 "      VPN AYARLARI SAYFASINA YONLENDIRILIYORSUNUZ." &echo:
-call  :Color 2 "  LUTFEN ISTENEN SIFREYI DOGRU YAZDIGINIZA EMIN OLUNUZ" &echo:
+call  :Color 4 "  LUTFEN ISTENEN SIFREYI DOGRU YAZDIGINIZA EMIN OLUNUZ" &echo:
 echo.
 echo ============================================================================================
 TIMEOUT /T 10
