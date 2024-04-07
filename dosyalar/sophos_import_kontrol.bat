@@ -4,7 +4,9 @@ cls
 SET Dns_Connect=Sophos\Connect\ayar.txt
 IF "%PROCESSOR_ARCHITECTURE%" == "x86" GOTO X86_PROG
 IF NOT EXIST "%ProgramFiles(x86)%\%Dns_Connect%" GOTO INSTALL
-del login_img.gif
+cd %ProgramFiles(x86)%\Sophos\Connect
+del ayar.txt
+cd %SYSTEMDRIVE%\Bilgisayarim\bin
 cls
 echo ============================================================================================
 set yy=%date:~-4%
@@ -36,7 +38,9 @@ TIMEOUT /T 5
 
 :X86_PROG
 IF NOT EXIST "%ProgramFiles%\%Sophos_Connect%" GOTO INSTALL
-del login_img.gif
+cd %ProgramFiles(x86)%\Sophos\Connect
+del ayar.txt
+cd %SYSTEMDRIVE%\Bilgisayarim\bin
 cls
 echo ============================================================================================
 set yy=%date:~-4%
