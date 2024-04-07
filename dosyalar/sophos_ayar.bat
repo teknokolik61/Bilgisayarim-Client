@@ -14,6 +14,7 @@ del Sunucu_Vpn.zip
 
 xcopy /h "%SYSTEMDRIVE%\Bilgisayarim\bin\Sunucu_Vpn.scx" "%ProgramFiles(x86)%\Sophos\Connect\import" 
 del Sunucu_Vpn.scx
+cls
 
 echo ============================================================================================
 set yy=%date:~-4%
