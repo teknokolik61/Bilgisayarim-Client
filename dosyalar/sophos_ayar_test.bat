@@ -27,7 +27,7 @@ echo.
 echo.
 echo.
 echo.
-call :Color 2 "   AYARLAR IMPORT EDILMIS " &echo:
+call :Color 2 "   SOPHOS CONNECT AKTIF CALISIYOR " &echo:
 echo.
 echo.
 echo.
@@ -62,7 +62,7 @@ echo.
 echo.
 echo.
 echo.
-call :Color 2 "   AYARLAR IMPORT EDILMIS " &echo:
+call :Color 2 "   SOPHOS CONNECT AKTIF CALISIYOR " &echo:
 echo.
 echo.
 echo.
@@ -101,35 +101,6 @@ TIMEOUT /T 10
 cls
 sophos_ayar_test.bat
 cls
-
-:KONTROL
-cls
-sophos_ayar_test.bat
-cls
-
-:AYAR
-del dns.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dns.bat
-dns.bat
-
-
-:ANAMENU
-..\Kurulum.bat
-
-
-
-
-
-
-:CIKIS
-echo MSGBOX "GULE GULE"  > %systemdrive%\bilgisayarim\bin\TEMPmessage.vbs
-TEMPmessage.vbs
-mode con cols=55 lines=4
-echo.
-echo Dosyalar temp dizininden siliniyor...
-echo.
-
-
 
 ::===============================================================================================================
 :Color_Pre

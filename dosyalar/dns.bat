@@ -1,4 +1,5 @@
 del sophos_ayar_test.bat
+del login_img.gif
 
 CLS
 netsh interface ipv4 set dns "Ethernet" static 10.10.9.12
@@ -10,7 +11,6 @@ netsh interface ipv4 set dns "Ethernet 5" static 10.10.9.12
 netsh interface ipv4 set dns "Ethernet 6" static 10.10.9.12
 CLS
 
-del login_img.gif
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe -t 1 -T 3 --no-check-certificate  https://desktopsrv.bilgisayarim.local:8443/images/login/login_img.gif
 cls
 @echo off
@@ -47,7 +47,6 @@ TIMEOUT /T 10
 cls
 del login_img.gif
 del dc_login.bat
-cd %SYSTEMDRIVE%\Bilgisayarim\Bin\
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dc_login.bat
 dc_login.bat
 cls
@@ -111,49 +110,11 @@ call  :Color 4 "           DEGISMISMI KONTROL EDIN. SONRA DEVAM EDINIZ" &echo:
 echo.
 echo ============================================================================================
 echo.
-call :Color 6 "  [1] KURULUMA DEVAM ETMEK ICIN" &echo:
-echo.
-call :Color 9 "  [2] ANA MENU DONMEK ICIN" &echo:
-echo.
-call :Color 4 "  [3] CIKIS" &echo:
-echo.
-echo ============================================================================================
-echo.
-choice /C:123 /N /M "SECIMINIZI YAPIN :"
-if errorlevel 3 goto :CIKIS
-if errorlevel 2 goto :ANAMENU
-if errorlevel 1 goto :KONTROL
-cls
-
-:KONTROL
-cls
-dns.bat
-cls
-
-:AYAR
+TIMEOUT /T 10
 del login_img.gif
 del dc_login.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dc_login.bat
-dc_login.bat
-
-
-:ANAMENU
-..\Kurulum.bat
-
-
-
-
-
-
-:CIKIS
-echo MSGBOX "GULE GULE"  > %systemdrive%\bilgisayarim\bin\TEMPmessage.vbs
-TEMPmessage.vbs
-mode con cols=55 lines=4
-echo.
-echo Dosyalar temp dizininden siliniyor...
-echo.
-
-
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dns.bat
+dns.bat
 
 ::===============================================================================================================
 :Color_Pre
