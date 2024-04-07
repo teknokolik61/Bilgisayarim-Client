@@ -1,4 +1,4 @@
-del dc_login.bat
+del dns.bat
 
 @echo off
 FOR /F "usebackq tokens=*" %%a IN (`wmic.exe COMPUTERSYSTEM GET DOMAIN /Value`) DO (
