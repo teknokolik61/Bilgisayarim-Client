@@ -49,7 +49,7 @@ del login_img.gif
 del dc_login.bat
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dc_login.bat
 dc_login.bat
-cls
+pause
 
 :X86_PROG
 IF NOT EXIST "%ProgramFiles%\%Sophos_Connect%" GOTO INSTALL
@@ -85,7 +85,7 @@ del login_img.gif
 del dc_login.bat
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dc_login.bat
 dc_login.bat
-cls
+pause
 
 :INSTALL
 echo ============================================================================================
@@ -115,7 +115,7 @@ del login_img.gif
 del dc_login.bat
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dns.bat
 dns.bat
-
+pause
 ::===============================================================================================================
 :Color_Pre
 for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (set "DEL=%%a") &exit /b
