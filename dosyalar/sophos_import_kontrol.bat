@@ -1,7 +1,7 @@
 del sophos_ayar.bat
 cls
 @echo off
-SET Dns_Connect=Sophos\Connect\import\ayar.txt
+SET Dns_Connect=Sophos\Connect\ayar.txt
 IF "%PROCESSOR_ARCHITECTURE%" == "x86" GOTO X86_PROG
 IF NOT EXIST "%ProgramFiles(x86)%\%Dns_Connect%" GOTO INSTALL
 del login_img.gif
