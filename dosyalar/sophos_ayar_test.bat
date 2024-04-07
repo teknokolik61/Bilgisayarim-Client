@@ -97,18 +97,9 @@ call  :Color 4 "           SOPHOS CONNECT GIRIS YAPTIYSANIZ KURULAMA DEVAM EDIN"
 echo.
 echo ============================================================================================
 echo.
-call :Color 6 "  [1] KURULUMA DEVAM ETMEK ICIN" &echo:
-echo.
-call :Color 9 "  [2] ANA MENU DONMEK ICIN" &echo:
-echo.
-call :Color 4 "  [3] CIKIS" &echo:
-echo.
-echo ============================================================================================
-echo.
-choice /C:123 /N /M "SECIMINIZI YAPIN :"
-if errorlevel 3 goto :CIKIS
-if errorlevel 2 goto :ANAMENU
-if errorlevel 1 goto :KONTROL
+TIMEOUT /T 10
+cls
+sophos_ayar_test.bat
 cls
 
 :KONTROL
