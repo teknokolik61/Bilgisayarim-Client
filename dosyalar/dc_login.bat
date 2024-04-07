@@ -35,6 +35,7 @@ echo          OS ADI : %NameOS% %xOS%
 echo        VERS˜iON : %Version%
 echo  islemci Mimarisi: %PROCESSOR_ARCHITECTURE%
 echo          PC ADI : %computername%
+echo      DOMAIN ADI: %_fqdn2%
 echo ============================================================================================
 echo.
 echo.
@@ -64,6 +65,7 @@ echo          OS ADI : %NameOS% %xOS%
 echo        VERS˜YON : %Version%
 echo  iSLEMCi MiMARiSi %PROCESSOR_ARCHITECTURE%
 echo          PC ADI : %computername%
+echo      DOMAIN ADI: %_fqdn2%
 echo ============================================================================================
 echo.
 call  :Color 9 "              DOMAIN LOGIN OLUNAMAMISTIR." &echo:
@@ -77,12 +79,6 @@ del dns.bat
 del dc_login.ps1
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dc_login.ps1
 cls
-
-
-
-
-
-
 
 Powershell.exe -executionpolicy remotesigned -File dc_login.ps1
 
@@ -105,22 +101,3 @@ mode con: cols=%1 lines=%2
 powershell -noprofile "$W=(get-host).ui.rawui; $B=$W.buffersize; $B.height=%3; $W.buffersize=$B"
 goto :EOF
 ::===============================================================================================================
-
-
-
-
-
-
-
-
-
-
-
-pause
-
-
-
-
-
-
-
