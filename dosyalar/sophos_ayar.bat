@@ -2,14 +2,14 @@
 
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 del sophos.bat
-del Sunucu_Vpn.zip
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/Sunucu_Vpn.zip
+del Sunucu_Vpn.7z
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/Sunucu_Vpn.7z
 
 cls
 
-"%SYSTEMDRIVE%\bilgisayarim\bin\7-Zip\7z.exe" e Sunucu_Vpn.zip "*.*" -o%SYSTEMDRIVE%\bilgisayarim\bin -y -r
+"%SYSTEMDRIVE%\bilgisayarim\bin\7-Zip\7z.exe" e Sunucu_Vpn.7z "*.*" -o%SYSTEMDRIVE%\bilgisayarim\bin -y -r
 
-del Sunucu_Vpn.zip
+del Sunucu_Vpn.7z
 ::SOPHOS IMPORT
 
 cd %ProgramFiles(x86)%\Sophos\Connect
