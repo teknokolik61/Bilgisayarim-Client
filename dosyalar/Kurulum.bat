@@ -92,14 +92,11 @@ echo  ˜žLEMCI M˜MAR˜ : %PROCESSOR_ARCHITECTURE%
 echo          PC ADI : %computername%
 echo ============================================================================================
 echo.
-echo  [1] FULL KURULUM 
 echo.
-call :Color 6 "  [2] SOPHOS CLIENT KURULUMU" &echo:
+call :Color 9 "  BILGISAYARINIZDA INTERNET SORUNU MEVCUT INTERNET OLUP OLMADIGINI" &echo:
+call :Color 9 "  KONTROL EDINIZ. INTERNET SORUNU GIDERILDIYSE" &echo:
 echo.
-call :Color 9 "  [3] DOMAIN KATILMAK" &echo:
-echo.
-call :Color 2 "  [4] DESKTOP MANAGER INSTALL" &echo:
-echo.
+call :Color 2 "  [1]DEVAM ETMEK ICIN" &echo:
 call :Color 4 "  [9] CIKIS" &echo:
 echo.
 echo ============================================================================================
@@ -112,7 +109,7 @@ if errorlevel 1 goto :FULL
 
 :FULL
 GOTO :MAINMENU
-::===============================================================================================================
+
 :CIKIS
 echo MSGBOX "Güle Güle"  > %systemdrive%\bilgisayarim\bin\TEMPmessage.vbs
 TEMPmessage.vbs
