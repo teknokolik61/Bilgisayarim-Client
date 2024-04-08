@@ -19,7 +19,7 @@ echo ===========================================================================
 echo.
 echo  [1] FULL KURULUM 
 echo.
-call :Color 6 "  [2] 2SOPHOS CLIENT KURULUMU" &echo:
+call :Color 6 "  [2] SOPHOS CLIENT KURULUMU" &echo:
 echo.
 call :Color 9 "  [3] DOMAIN KATILMAK" &echo:
 echo.
