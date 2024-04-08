@@ -48,9 +48,9 @@ if errorlevel 1 goto :FULL
 test.bat
 :DOMAIN
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
-del sophos_ayar_test.bat
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_ayar_test.bat
-sophos_ayar_test.bat
+del dc_login.bat
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/basterzi/dc_login.bat
+dc_login.bat
 pause
 :SOPHOS
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
