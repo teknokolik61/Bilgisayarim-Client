@@ -47,14 +47,14 @@ cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 del sandik.bat
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/basterzi/sandik.bat
 sandik.bat
-::..\setup.bat
+..\setup.bat
 pause
 :DESKTOP
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 del desktop.bat
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/basterzi/desktop.bat
 desktop.bat
-::..\setup.bat
+..\setup.bat
 pause
 :DOMAIN
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
