@@ -61,7 +61,11 @@ echo EGLENCE
 pause
   
   :BASTERZI
-echo h
+cd %SYSTEMDRIVE%\Bilgisayarim\bin\
+del kurulumb.bat
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/basterzi/kurulumb2.bat
+::kurulumb.bat
+..\kurulum.bat
 pause
   
   :KACKAR
