@@ -5,7 +5,7 @@ SET Dns_Connect=Sophos\Connect\ayar.txt
 IF "%PROCESSOR_ARCHITECTURE%" == "x86" GOTO X86_PROG
 IF NOT EXIST "%ProgramFiles(x86)%\%Dns_Connect%" GOTO INSTALL
 cd %ProgramFiles(x86)%\Sophos\Connect
-del ayar.txt
+::del ayar.txt
 cd %SYSTEMDRIVE%\Bilgisayarim\bin
 cls
 echo ============================================================================================
