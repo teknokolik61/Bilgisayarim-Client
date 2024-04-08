@@ -1,3 +1,4 @@
+del dns.bat
   @ECHO OFF
 
 
