@@ -73,7 +73,7 @@ mode con cols=92 lines=35
 
 del baslangic.bat
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/baslangic.bat
-baslangic.bat
+baslangic22222222.bat
 cls
 
 echo ============================================================================================
@@ -100,38 +100,18 @@ call :Color 9 "  [3] DOMAIN KATILMAK" &echo:
 echo.
 call :Color 2 "  [4] DESKTOP MANAGER INSTALL" &echo:
 echo.
-call :Color 4 "  [5] CIKIS" &echo:
+call :Color 4 "  [9] CIKIS" &echo:
 echo.
 echo ============================================================================================
 echo.
-choice /C:123459 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
+choice /C:19 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
 
-if errorlevel 9 goto :test
-if errorlevel 5 goto :CIKIS
-if errorlevel 4 goto :DESKTOP
-if errorlevel 3 goto :DOMAIN
-if errorlevel 2 goto :SOPHOS
+if errorlevel 9 goto :CIKIS
 if errorlevel 1 goto :FULL
 
-::===============================================================================================================
-:test
-::del test.bat
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/test.bat
-test.bat
-:DOMAIN
-cd %SYSTEMDRIVE%\Bilgisayarim\bin\
-del sophos_ayar_test.bat
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_ayar_test.bat
-sophos_ayar_test.bat
-pause
-:SOPHOS
-cd %SYSTEMDRIVE%\Bilgisayarim\bin\
-del sophos.bat
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos.bat
-sophos.bat
-pause
+
 :FULL
-cls
+GOTO :MAINMENU
 ::===============================================================================================================
 :CIKIS
 echo MSGBOX "Güle Güle"  > %systemdrive%\bilgisayarim\bin\TEMPmessage.vbs
