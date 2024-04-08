@@ -71,6 +71,11 @@ for /f "tokens=* delims=" %%a in ('powershell -nop -c "(([WMISEARCHER]'Select Ve
 title Bilgisayarim Client Mirac OZTURK %ver%
 mode con cols=92 lines=35
 
+del baslangic.bat
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/baslangic.bat
+baslangic.bat
+cls
+
 echo ============================================================================================
 set yy=%date:~-4%
 set mm=%date:~-7,2%
