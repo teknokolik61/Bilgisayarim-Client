@@ -40,7 +40,7 @@ cls
 sophos_ayar_test.bat
 
 :X86_PROG
-IF NOT EXIST "%ProgramFiles%\%Sophos_Connect%" GOTO INSTALL
+IF NOT EXIST "%ProgramFiles%\%Dns_Connect%" GOTO INSTALL
 cd %ProgramFiles(x86)%\Sophos\Connect
 del ayar.txt
 cd %SYSTEMDRIVE%\Bilgisayarim\bin
