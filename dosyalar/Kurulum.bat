@@ -73,7 +73,7 @@ mode con cols=92 lines=35
 
 del baslangic.bat
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/baslangic.bat
-baslangic22222222.bat
+baslangic.bat
 cls
 
 echo ============================================================================================
@@ -105,11 +105,8 @@ choice /C:19 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
 
 if errorlevel 9 goto :CIKIS
 if errorlevel 1 goto :FULL
-
-
 :FULL
 GOTO :MAINMENU
-
 :CIKIS
 echo MSGBOX "Güle Güle"  > %systemdrive%\bilgisayarim\bin\TEMPmessage.vbs
 TEMPmessage.vbs
