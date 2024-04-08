@@ -1,4 +1,6 @@
+del baslangic.bat
 del dns.bat
+cls
   @ECHO OFF
 
 
