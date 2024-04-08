@@ -48,7 +48,7 @@ echo.
 echo.
 echo.
 TIMEOUT /T 5
-..\Kurulum.bat
+kurulumb.bat
 
 :INSTALL
 echo ============================================================================================
@@ -74,7 +74,7 @@ echo.
 echo ============================================================================================
 TIMEOUT /T 10
 del dc_login.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dc_login.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/basterzi/dc_login.bat
 cls
 dc_login.bat
 

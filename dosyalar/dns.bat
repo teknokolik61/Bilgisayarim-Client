@@ -46,9 +46,7 @@ echo.
 TIMEOUT /T 10
 cls
 del login_img.gif
-del dc_login.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dc_login.bat
-dc_login.bat
+kurulumb.bat
 pause
 
 :X86_PROG
@@ -82,9 +80,7 @@ echo.
 TIMEOUT /T 10
 cls
 del login_img.gif
-del dc_login.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dc_login.bat
-dc_login.bat
+kurulumb.bat
 pause
 
 :INSTALL

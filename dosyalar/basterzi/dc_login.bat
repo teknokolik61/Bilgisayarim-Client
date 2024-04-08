@@ -48,7 +48,7 @@ echo.
 echo.
 echo.
 TIMEOUT /T 5
-..\Kurulum.bat
+kurulumb.bat
 
 :INSTALL
 echo ============================================================================================
@@ -77,14 +77,14 @@ TIMEOUT /T 10
 cls
 del dns.bat
 del dc_login.ps1
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dc_login.ps1
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/basterzi/dc_login.ps1
 cls
 
 Powershell.exe -executionpolicy remotesigned -File dc_login.ps1
 
 TIMEOUT /T 10
 del domain_test.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/domain_test.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/basterzi/domain_test.bat
 cls
 domain_test.bat
 

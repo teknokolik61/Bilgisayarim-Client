@@ -34,7 +34,10 @@ echo.
 echo.
 echo.
 TIMEOUT /T 5
-..\Kurulum.bat
+del sophos_ayar_test.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_ayar_test.bat
+cls
+sophos_ayar_test.bat
 
 :X86_PROG
 IF NOT EXIST "%ProgramFiles%\%Sophos_Connect%" GOTO INSTALL
@@ -68,7 +71,10 @@ echo.
 echo.
 echo.
 TIMEOUT /T 5
-..\Kurulum.bat
+del sophos_ayar_test.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_ayar_test.bat
+cls
+sophos_ayar_test.bat
 
 :INSTALL
 echo ============================================================================================
