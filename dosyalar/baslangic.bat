@@ -1,4 +1,4 @@
-del kurulum.bat
+del ..\kurulum.bat
 
 
   ::@chcp 65001
