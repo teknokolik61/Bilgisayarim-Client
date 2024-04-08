@@ -20,46 +20,57 @@ echo  ˜žLEMCI M˜MAR˜ : %PROCESSOR_ARCHITECTURE%
 echo          PC ADI : %computername%
 echo ============================================================================================
 echo.
-echo  [1] FULL KURULUM 
 echo.
-call :Color 6 "  [2] SOPHOS CLIENT KURULUMU" &echo:
+call :Color 6 "  [1] SOPHOS CLIENT KURULUMU" &echo:
 echo.
-call :Color 9 "  [3] DOMAIN KATILMAK" &echo:
+call :Color 9 "  [2] DOMAIN KATILMAK" &echo:
 echo.
-call :Color 2 "  [4] DESKTOP MANAGER INSTALL" &echo:
+call :Color 2 "  [3] DESKTOP MANAGER INSTALL" &echo:
 echo.
-call :Color 4 "  [5] CIKIS" &echo:
+call :Color 8 "  [4] SANDIK KURULUMU" &echo:
+echo.
+call :Color 4 "  [9] CIKIS" &echo:
 echo.
 echo ============================================================================================
 echo.
-choice /C:123459 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
+choice /C:12349 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
 
-if errorlevel 9 goto :test
-if errorlevel 5 goto :CIKIS
-if errorlevel 4 goto :DESKTOP
-if errorlevel 3 goto :DOMAIN
-if errorlevel 2 goto :SOPHOS
-if errorlevel 1 goto :FULL
+if errorlevel 9 goto :CIKIS
+if errorlevel 4 goto :SANDIK
+if errorlevel 3 goto :DESKTOP
+if errorlevel 2 goto :DOMAIN
+if errorlevel 1 goto :SOPHOS
 
 ::===============================================================================================================
-:test
-::del test.bat
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/test.bat
-test.bat
+:SANDIK
+cd %SYSTEMDRIVE%\Bilgisayarim\bin\
+del sandik.bat
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/basterzi/sandik.bat
+sandik.bat
+::..\setup.bat
+pause
+:DESKTOP
+cd %SYSTEMDRIVE%\Bilgisayarim\bin\
+del desktop.bat
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/basterzi/desktop.bat
+desktop.bat
+::..\setup.bat
+pause
 :DOMAIN
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 del dc_login.bat
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/basterzi/dc_login.bat
 dc_login.bat
+..\setup.bat
 pause
 :SOPHOS
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 del sophos.bat
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos.bat
 sophos.bat
+..\setup.bat
 pause
-:FULL
-cls
+
 ::===============================================================================================================
 :CIKIS
 echo MSGBOX "Güle Güle"  > %systemdrive%\bilgisayarim\bin\TEMPmessage.vbs
