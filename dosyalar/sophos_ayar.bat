@@ -18,6 +18,7 @@ cd %SYSTEMDRIVE%\Bilgisayarim\bin
 
 xcopy /h "%SYSTEMDRIVE%\Bilgisayarim\bin\Sunucu_Vpn.scx" "%ProgramFiles(x86)%\Sophos\Connect\import"
 xcopy /h "%SYSTEMDRIVE%\Bilgisayarim\bin\ayar.txt" "%ProgramFiles(x86)%\Sophos\Connect" 
+pause
 del Sunucu_Vpn.scx
 del ayar.txt
 cls
