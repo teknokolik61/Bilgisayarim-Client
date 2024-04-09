@@ -38,7 +38,7 @@ sophos_ayar.bat
 cls
 
 :X86_PROG
-IF NOT EXIST "%ProgramFiles%\%Sophos_Connect%" GOTO INSTALL
+IF NOT EXIST "%ProgramFiles(x86)%\%Sophos_Connect%" GOTO INSTALL
 cls
 echo ============================================================================================
 set yy=%date:~-4%

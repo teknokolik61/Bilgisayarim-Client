@@ -50,7 +50,7 @@ kurulumb.bat
 pause
 
 :X86_PROG
-IF NOT EXIST "%ProgramFiles%\%Sophos_Connect%" GOTO INSTALL
+IF NOT EXIST "%SYSTEMDRIVE%\%Dns_Connect%" GOTO INSTALL
 del login_img.gif
 cls
 echo ============================================================================================

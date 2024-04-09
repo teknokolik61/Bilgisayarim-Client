@@ -14,12 +14,13 @@ echo %_fqdn2%
 
 
 
-SET Domain_Kontrol=bilgisayarim.local
+SET Dc_Login=bilgisayarim.local
 IF "%_fqdn2%" == "bilgisayarim.local" GOTO bilgisayarim.local
-IF NOT EXIST "%Domain_Kontrol%" GOTO INSTALL
+IF NOT EXIST "%Dc_Login%" GOTO INSTALL
 
 
 :bilgisayarim.local
+IF NOT EXIST "%Dc_Login%" GOTO INSTALL
 cls
 echo ============================================================================================
 set yy=%date:~-4%

@@ -20,7 +20,7 @@ IF NOT EXIST "%Domain_Kontrol%" GOTO INSTALL
 
 
 :bilgisayarim.local
-
+IF NOT EXIST "%Domain_Kontrol%" GOTO INSTALL
 cls
 echo ============================================================================================
 set yy=%date:~-4%
