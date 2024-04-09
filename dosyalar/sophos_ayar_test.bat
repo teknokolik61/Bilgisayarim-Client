@@ -5,7 +5,7 @@ cls
 @echo off
 SET Dns_Connect=Bilgisayarim\bin\login_img.gif
 IF "%PROCESSOR_ARCHITECTURE%" == "x86" GOTO X86_PROG
-IF NOT EXIST "%SYSTEMDRIVE%\%Dns_Connect%" GOTO INSTALL
+IF NOT EXIST "%SYSTEMDRIVE%\%Dns_Connect%" GOTO KUR
 del login_img.gif
 cls
 echo ============================================================================================
@@ -40,7 +40,7 @@ dns.bat
 cls
 
 :X86_PROG
-IF NOT EXIST "%SYSTEMDRIVE%\%Dns_Connect%" GOTO INSTALL
+IF NOT EXIST "%SYSTEMDRIVE%\%Dns_Connect%" GOTO KUR
 del login_img.gif
 cls
 echo ============================================================================================
