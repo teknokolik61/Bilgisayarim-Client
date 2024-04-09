@@ -1,5 +1,3 @@
-del dns.bat
-
 @echo off
 FOR /F "usebackq tokens=*" %%a IN (`wmic.exe COMPUTERSYSTEM GET DOMAIN /Value`) DO (
       @((ECHO %%a | findstr /i /c:"Domain=") && SET _str=%%a) > NUL 2>&1
@@ -7,15 +5,15 @@ FOR /F "usebackq tokens=*" %%a IN (`wmic.exe COMPUTERSYSTEM GET DOMAIN /Value`) 
 FOR /F "tokens=2 delims=^=" %%a IN ("%_str%") do SET _computerDomain=%%a
 SET _computerDomain=%_computerDomain: =%
 SET _fqdn=%COMPUTERNAME%.%_computerDomain%
-SET _fqdn2=%LOGONSERVER%
+SET _fqdnad=%LOGONSERVER%
 echo %_fqdn%
-echo %_fqdn2%
+echo %_fqdnad%
 
 
 
 
 SET Ad_user_Kontrol=bilgisayarim.local
-IF "%_fqdn2%" == "\\DCSRV" GOTO \\DCSRV
+IF "%_fqdnad%" == "\\DCSRV" GOTO \\DCSRV
 IF NOT EXIST "%Ad_user_Kontrol%" GOTO INSTALL
 
 
