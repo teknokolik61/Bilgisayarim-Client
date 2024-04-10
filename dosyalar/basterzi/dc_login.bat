@@ -48,10 +48,10 @@ echo.
 echo.
 echo.
 TIMEOUT /T 5
-del ad_user_kontrol.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/ad_user_kontrol.bat
+del domain_test.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/basterzi/domain_test.bat
 cls
-ad_user_kontrol.bat
+domain_test.bat
 
 :KUR45
 echo ============================================================================================

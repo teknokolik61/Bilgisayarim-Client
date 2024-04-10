@@ -29,6 +29,7 @@ echo.
 echo.
 echo.
 call :Color 2 "   DNS AYARLARI IMPORT EDILMIS " &echo:
+call :Color 2 "   ANA SAYFAYA YONLENDIRILIYORSUNUZ(ASAMA 2 DEVAM EDINIZ). " &echo:
 echo.
 echo.
 echo.
@@ -36,7 +37,9 @@ echo.
 TIMEOUT /T 10
 cls
 del login_img.gif
-kurulumb.bat
+del kurulum2.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/kurulum2.bat
+kurulum2.bat
 pause
 
 :X86_PROG
@@ -63,6 +66,7 @@ echo.
 echo.
 echo.
 call :Color 2 "   DNS AYARLARI IMPORT EDILMIS " &echo:
+call :Color 2 "   ANA SAYFAYA YONLENDIRILIYORSUNUZ(ASAMA 2 DEVAM EDINIZ). " &echo:
 echo.
 echo.
 echo.
@@ -70,7 +74,9 @@ echo.
 TIMEOUT /T 10
 cls
 del login_img.gif
-kurulumb.bat
+del kurulum2.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/kurulum2.bat
+kurulum2.bat
 pause
 
 :INSTALL

@@ -1,3 +1,4 @@
+del kurulum1.bat
 cls
 @echo off
 SET Sophos_Connect=Sophos\Connect\scvpn.exe

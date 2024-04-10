@@ -1,4 +1,4 @@
-del dc_login.bat
+del domain_test.bat
 
 @echo off
 FOR /F "usebackq tokens=*" %%a IN (`wmic.exe COMPUTERSYSTEM GET DOMAIN /Value`) DO (
@@ -47,7 +47,10 @@ echo.
 echo.
 echo.
 TIMEOUT /T 5
-kurulumb.bat
+del kurulum3.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/basterzi/kurulum3.bat
+cls
+kurulum3.bat
 
 :INSTALL
 ECHO MERHABA DOMAIN CONTROLERIN KULLANICI ADI ILE GIRIS YAPILMAMIS

@@ -34,9 +34,10 @@ echo.
 echo.
 echo.
 TIMEOUT /T 10
-cls
-kurulumb.bat
-pause
+del login_img.gif
+del dns_kontrol.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dns_kontrol.bat
+dns_kontrol.bat
 
 :X86_PROG
 IF NOT EXIST "%SYSTEMDRIVE%\%Dns_Connect%" GOTO INSTALL
@@ -66,10 +67,11 @@ echo.
 echo.
 echo.
 echo.
-TIMEOUT /T 10
-cls
-kurulumb.bat
-pause
+TIMEOUT /T 5
+del login_img.gif
+del dns_kontrol.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dns_kontrol.bat
+dns_kontrol.bat
 
 :INSTALL
 CLS

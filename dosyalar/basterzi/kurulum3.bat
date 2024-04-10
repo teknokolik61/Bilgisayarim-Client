@@ -22,34 +22,25 @@ echo          PC ADI : %computername%
 echo ============================================================================================
 echo.
 echo.
-call :Color 6 "  [1] SOPHOS CLIENT KURULUMU" &echo:
+call :Color 6 "  [1] SOPHOS CLIENT KURULUMU (KURULDU)" &echo:
 echo.
-call :Color 9 "  [2] DOMAIN KATILMAK" &echo:
+call :Color 9 "  [2] DOMAIN KATILMAK (KURULDU)" &echo:
 echo.
-call :Color 2 "  [3] DESKTOP MANAGER INSTALL" &echo:
+call :Color 2 "  [3] DESKTOP MANAGER INSTALL " &echo:
 echo.
-call :Color 8 "  [4] SANDIK KURULUMU" &echo:
+call :Color 8 "  [4] SANDIK KURULUMU (KURULMADI)" &echo:
 echo.
 call :Color 4 "  [9] CIKIS" &echo:
 echo.
 echo ============================================================================================
 echo.
-choice /C:12349 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
+choice /C:39 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
 
 if errorlevel 9 goto :CIKIS
-if errorlevel 4 goto :SANDIK
 if errorlevel 3 goto :DESKTOP
-if errorlevel 2 goto :DOMAIN
-if errorlevel 1 goto :SOPHOS
+
 
 ::===============================================================================================================
-:SANDIK
-cd %SYSTEMDRIVE%\Bilgisayarim\bin\
-del sandik.bat
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/basterzi/sandik.bat
-sandik.bat
-..\setup.bat
-pause
 :DESKTOP
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 del desktop.bat
@@ -57,20 +48,7 @@ del desktop.bat
 desktop.bat
 ..\setup.bat
 pause
-:DOMAIN
-cd %SYSTEMDRIVE%\Bilgisayarim\bin\
-del dc_login.bat
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/basterzi/dc_login.bat
-dc_login.bat
-..\setup.bat
-pause
-:SOPHOS
-cd %SYSTEMDRIVE%\Bilgisayarim\bin\
-del sophos.bat
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos.bat
-sophos.bat
-..\setup.bat
-pause
+
 
 ::===============================================================================================================
 :CIKIS

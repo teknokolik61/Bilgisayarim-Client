@@ -63,9 +63,9 @@ pause
   
   :BASTERZI
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
-del kurulumb.bat
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/basterzi/kurulumb.bat
-kurulumb.bat
+del kurulum1.bat
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/basterzi/kurulum1.bat
+kurulum1.bat
 ..\kurulum.bat
 pause
   
