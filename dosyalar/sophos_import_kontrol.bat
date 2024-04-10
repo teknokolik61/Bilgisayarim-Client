@@ -1,9 +1,9 @@
 del sophos_ayar.bat
 cls
 @echo off
-SET Dns_Connect=Sophos\Connect\ayar.txt
+SET Sophos_Ayar_K=Sophos\Connect\ayar.txt
 IF "%PROCESSOR_ARCHITECTURE%" == "x86" GOTO X86_PROG
-IF NOT EXIST "%ProgramFiles(x86)%\%Dns_Connect%" GOTO INSTALL
+IF NOT EXIST "%ProgramFiles(x86)%\%Sophos_Ayar_K%" GOTO KURSOPHOS
 cd %ProgramFiles(x86)%\Sophos\Connect
 del ayar.txt
 cd %SYSTEMDRIVE%\Bilgisayarim\bin
@@ -40,7 +40,7 @@ cls
 sophos_ayar_test.bat
 
 :X86_PROG
-IF NOT EXIST "%ProgramFiles(x86)%\%Dns_Connect%" GOTO INSTALL
+IF NOT EXIST "%ProgramFiles(x86)%\%Sophos_Ayar_K%" GOTO KURSOPHOS
 cd %ProgramFiles(x86)%\Sophos\Connect
 del ayar.txt
 cd %SYSTEMDRIVE%\Bilgisayarim\bin
@@ -76,7 +76,7 @@ del sophos_ayar_test.bat
 cls
 sophos_ayar_test.bat
 
-:INSTALL
+:KURSOPHOS
 echo ============================================================================================
 set yy=%date:~-4%
 set mm=%date:~-7,2%

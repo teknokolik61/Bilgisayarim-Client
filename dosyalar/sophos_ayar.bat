@@ -21,7 +21,6 @@ xcopy /h "%SYSTEMDRIVE%\Bilgisayarim\bin\ayar.txt" "%ProgramFiles(x86)%\Sophos\C
 del Sunucu_Vpn.scx
 del ayar.txt
 cls
-
 echo ============================================================================================
 set yy=%date:~-4%
 set mm=%date:~-7,2%
