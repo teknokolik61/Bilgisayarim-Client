@@ -42,8 +42,11 @@ echo.
 echo.
 echo.
 echo.
-call :Color 2 "   DOMAIN LOGIN OLMUSTUR " &echo:
-call :Color 2 "   DOMAIN USER KONTROL SAYFASINA YONLENDIRILIYORSUNUZ. " &echo:
+ECHO                   DOMAIN LOGIN OLMUSTUR 
+ECHO    DOMAIN USER KONTROL SAYFASINA YONLENDIRILIYORSUNUZ. 
+
+::call :Color 2 "   DOMAIN LOGIN OLMUSTUR " &echo:
+::call :Color 2 "   DOMAIN USER KONTROL SAYFASINA YONLENDIRILIYORSUNUZ. " &echo:
 echo.
 echo.
 echo.
