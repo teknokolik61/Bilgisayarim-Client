@@ -1,3 +1,5 @@
+del sophos.bat
+
 @echo off
 
 echo ayar%sunucuvpn%.txt

@@ -1,5 +1,4 @@
-del baslangic.bat
-del dns.bat
+del kurulum2.bat
 del ad_user_kontrol.bat
 cls
   @ECHO OFF
