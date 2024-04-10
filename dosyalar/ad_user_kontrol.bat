@@ -53,12 +53,64 @@ cls
 kurulum3.bat
 
 :INSTALL
+cls
+del restart.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/restart.bat
+w_guvenlik_disable.ps1
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/w_guvenlik_disable.ps1
+Powershell.exe -executionpolicy remotesigned -File w_guvenlik_disable.ps1
+del defender_devre_disi.reg
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/defender_devre_disi.reg.bat
+defender_devre_disi.reg.bat
+del utilman.reg
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/utilman.reg
+utilman.reg
+
+
+
+
+
+pause
+
+
+
+cls
+echo ============================================================================================
+set yy=%date:~-4%
+set mm=%date:~-7,2%
+set dd=%date:~-10,2%
+for /f "tokens=1-2 delims=/:" %%a in ('time /t') do (set mytime=%%a:%%b)
+echo                                                           	     %dd%.%mm%.%yy% ^- %mytime%
+echo.
+call :Color 6 "  Bilgisayarim Client Kurulumu %ver% - www.miracozturk.com.tr " &echo:
+echo.
+echo.
+echo          OS ADI : %NameOS% %xOS%
+echo        VERS˜iON : %Version%
+echo  islemci Mimarisi: %PROCESSOR_ARCHITECTURE%
+echo          PC ADI : %computername%
+echo ============================================================================================
+echo.
+echo.
+echo.
+echo.
+ECHO ONEMLI ONEMLI ONEMLI ONEMLI ONEMLI ONEMLI ONEMLI ONEMLI 
+echo.
+ECHO              DIKKAT BURASI ONEMLI 
+echo.
 ECHO MERHABA DOMAIN CONTROLERIN KULLANICI ADI ILE GIRIS YAPILMAMIS
-ECHO BILGISAYARI YENIDEN BASLATIP FARKLI KULLANICI ADI OLARAK GIRIS YAPIN
+ECHO BU ISLEMDEN SONRA BILGISAYARINIZ OTOMATİK YENIDEN BASLATILACAKTIR 
+echo BILGISAYAR ACILDIKTAN SONRA DIGER KULLANICI SECILIP 
 ECHO VE SIZE VERILEN KULLANICI ADI VE SIFRE ILE GIRIS YAPINIZ
+ECHO
 ECHO EGER KULLANICI ADI VE SIFRE ILE GIRIS YAPAMIYORSANIZ
-ECHO  WINDOWS+U TUSUNE BASARAK ORADAKI ADIMLARI TAKIP EDEREK
-ECHO KULLANICI ADI VE SIFRE ILE GIRIS YAPINIZ.
+ECHO WINDOWS+U TUSUNE BASARAK ACILAN PROGRAMDAKI ADIMLARI TAKIP EDEREK
+ECHO KULLANICI ADI VE SIFRE ILE GIRIS YAPINIZ
+echo.
+ECHO YUKARIDAKI ADIMLARI DIKKATLIECE OKUYUNUZ.
+ECHO    DEVAM ETMEK ICIN BIR TUSA BASINIZ
+echo.
+echo.
 PAUSE
 
 ::===============================================================================================================
