@@ -34,10 +34,16 @@ call :Color 4 "  [9] CIKIS" &echo:
 echo.
 echo ============================================================================================
 echo.
-choice /C:19 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
+choice /C:12349 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
 
 if errorlevel 9 goto :CIKIS
 if errorlevel 1 goto :SOPHOS
+:DOMAIN
+cd %SYSTEMDRIVE%\Bilgisayarim\bin\
+del dc_login.bat
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/basterzi/dc_login.bat
+dc_login.bat
+..\setup.bat
 
 ::===============================================================================================================
 :SOPHOS
