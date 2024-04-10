@@ -2,7 +2,7 @@
 
 echo ayar%sunucuvpn%.txt
 SET Sophos_Ayar_K=\Sophos\Sunucu\ayar%sunucuvpn%.txt
-IF "%PROCESSOR_ARCHITECTURE%" GOTO X86
+IF "ayar%sunucuvpn%.txt" == "Sophos_Ayar_K" GOTO X86
 IF NOT EXIST "%ProgramFiles(x86)%\%Sophos_Ayar_K%" GOTO SOPHOSAYAR
 
 
