@@ -26,8 +26,8 @@ echo.
 echo.
 echo.
 echo.
-call :Color 2 "    GUNCEL SUNUCU SOPHOS AYARLARI MEVCUT " &echo:
-call :Color 2 "   KONTROL SAYFASINA YONLENDIRILIYORSUNUZ " &echo:
+::call :Color 2 "    GUNCEL SUNUCU SOPHOS AYARLARI MEVCUT " &echo:
+::call :Color 2 "   KONTROL SAYFASINA YONLENDIRILIYORSUNUZ " &echo:
 echo.
 echo.
 echo.
@@ -59,8 +59,8 @@ echo.
 echo.
 echo.
 echo.
-call :Color 2 "    GUNCEL SUNUCU SOPHOS AYARLARI MEVCUT " &echo:
-call :Color 2 "   KONTROL SAYFASINA YONLENDIRILIYORSUNUZ " &echo:
+::call :Color 2 "    GUNCEL SUNUCU SOPHOS AYARLARI MEVCUT " &echo:
+::call :Color 2 "   KONTROL SAYFASINA YONLENDIRILIYORSUNUZ " &echo:
 echo.
 echo.
 echo.
