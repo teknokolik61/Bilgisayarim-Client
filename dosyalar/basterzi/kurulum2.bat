@@ -23,6 +23,7 @@ echo          OS ADI : %NameOS% %xOS%
 echo        VERS˜YON : %Version%
 echo  ˜žLEMCI M˜MAR˜ : %PROCESSOR_ARCHITECTURE%
 echo          PC ADI : %computername%
+echo          OFIS   : %OFIS%
 echo ============================================================================================
 echo.
 echo.
