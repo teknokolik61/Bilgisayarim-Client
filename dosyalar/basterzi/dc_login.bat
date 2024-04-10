@@ -20,7 +20,6 @@ IF NOT EXIST "%Dc_Login%" GOTO INSTALL
 
 
 :bilgisayarim.local
-IF NOT EXIST "%Dc_Login%" GOTO INSTALL
 cls
 echo ============================================================================================
 set yy=%date:~-4%

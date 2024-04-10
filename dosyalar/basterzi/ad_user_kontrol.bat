@@ -12,13 +12,13 @@ echo %_fqdnad%
 
 
 
-SET Ad_user_Kontrol=bilgisayarim.local
+SET Ad_user_Kontrol=\\DCSRV
 IF "%_fqdnad%" == "\\DCSRV" GOTO \\DCSRV
 IF NOT EXIST "%Ad_user_Kontrol%" GOTO INSTALL
 
 
 :\\DCSRV
-IF NOT EXIST "%Ad_user_Kontrol%" GOTO INSTALL
+
 cls
 ECHO DCSRV TEST
 PAUSE
