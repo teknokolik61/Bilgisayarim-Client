@@ -4,7 +4,7 @@ del ad_user_kontrol.bat
 cls
   @ECHO OFF
 
-
+SET OFIS="basterzi"
 echo ============================================================================================
 set yy=%date:~-4%
 set mm=%date:~-7,2%
