@@ -4,7 +4,7 @@ del ad_user_kontrol.bat
 cls
   @ECHO OFF
 
-SET OFIS="basterzi"
+
 :MENU
 CLS
 echo ============================================================================================
