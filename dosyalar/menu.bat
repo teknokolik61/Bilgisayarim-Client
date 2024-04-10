@@ -1,3 +1,5 @@
+del baslangic.bat
+
 @echo off
 
 SET menu1=\bilgisayarim\bin\menu1.txt
