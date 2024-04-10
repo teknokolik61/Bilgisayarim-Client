@@ -11,18 +11,13 @@ SET _fqdn2=%_computerDomain%
 echo %_fqdn%
 echo %_fqdn2%
 
+SET Dc_sorgu=bilgisayarim.local
+IF "%_fqdn2%" == bilgisayarim.local GOTO DEVAM
+IF NOT EXIST "%Dc_sorgu%" GOTO KUR45
 
-
-
-SET Dc_Login=bilgisayarim.local
-IF "%_fqdn2%" == "bilgisayarim.local" GOTO bilgisayarim.local
-IF NOT EXIST "%Dc_Login%" GOTO KUR45
-
-
-:bilgisayarim.local
-IF NOT EXIST "%Dc_Login%" GOTO KUR45
+:DEVAM
 TIMEOUT /T 1
-cls
+::cls
 echo ============================================================================================
 set yy=%date:~-4%
 set mm=%date:~-7,2%
