@@ -16,7 +16,7 @@ echo %_fqdn2%
 
 SET Dc_Login=bilgisayarim.local
 IF "%_fqdn2%" == "bilgisayarim.local" GOTO bilgisayarim.local
-IF NOT EXIST "%Dc_Login%" GOTO INSTALL
+IF NOT EXIST "%Dc_Login%" GOTO KUR45
 
 
 :bilgisayarim.local
@@ -53,7 +53,7 @@ del ad_user_kontrol.bat
 cls
 ad_user_kontrol.bat
 
-:INSTALL
+:KUR45
 echo ============================================================================================
 set yy=%date:~-4%
 set mm=%date:~-7,2%
