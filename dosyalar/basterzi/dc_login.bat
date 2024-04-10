@@ -20,6 +20,8 @@ IF NOT EXIST "%Dc_Login%" GOTO KUR45
 
 
 :bilgisayarim.local
+IF NOT EXIST "%Dc_Login%" GOTO KUR45
+TIMEOUT /T 1
 cls
 echo ============================================================================================
 set yy=%date:~-4%
