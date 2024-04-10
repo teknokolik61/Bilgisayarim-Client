@@ -42,12 +42,8 @@ echo.
 echo.
 echo.
 echo.
-ECHO                   DOMAIN LOGIN OLMUSTUR 
-ECHO    DOMAIN USER KONTROL SAYFASINA YONLENDIRILIYORSUNUZ. 
-ECHO    Mirac OZTURK
-
-::call :Color 2 "   DOMAIN LOGIN OLMUSTUR " &echo:
-::call :Color 2 "   DOMAIN USER KONTROL SAYFASINA YONLENDIRILIYORSUNUZ. " &echo:
+call :Color 2 "   DOMAIN LOGIN OLMUSTUR " &echo:
+call :Color 2 "   DOMAIN USER KONTROL SAYFASINA YONLENDIRILIYORSUNUZ " &echo:
 echo.
 echo.
 echo.
