@@ -2,6 +2,13 @@ cd %SYSTEMDRIVE%\Bilgisayarim\Bin
 del sophos_ayar.bat
 del sophos_ayar_test.bat
 <!-- : Begin batch script
+
+@set ver=v9.8
+@set title=Bilgisayarim Client Mirac OZTURK
+@set sunucuvpn=1
+@set basterzivpn=1
+
+
 @echo off
 @setlocal DisableDelayedExpansion
 cls
