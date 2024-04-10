@@ -35,7 +35,6 @@ echo.
 echo.
 echo.
 
-pause
 TIMEOUT /T 10
 cls
 del login_img.gif
