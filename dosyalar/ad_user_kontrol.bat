@@ -56,7 +56,6 @@ kurulum3.bat
 cls
 del restart.bat
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/restart.bat
-w_guvenlik_disable.ps1
 del w_guvenlik_disable.ps1
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/w_guvenlik_disable.ps1
 Powershell.exe -executionpolicy remotesigned -File w_guvenlik_disable.ps1
