@@ -1,5 +1,9 @@
 del kurulum1.bat
 del dns_kontrol.bat
+cd %SYSTEMDRIVE%\Bilgisayarim\bin\
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/menu/menu1.txt
+
+
 cls
   @ECHO OFF
 

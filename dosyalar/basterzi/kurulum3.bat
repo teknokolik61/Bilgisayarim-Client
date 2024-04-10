@@ -1,5 +1,10 @@
 del kurulum2.bat
 del ad_user_kontrol.bat
+cd %SYSTEMDRIVE%\Bilgisayarim\bin\
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/menu/menu2.txt
+
+
+
 cls
   @ECHO OFF
 
