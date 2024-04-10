@@ -3,7 +3,8 @@ del dns_kontrol.bat
 cls
   @ECHO OFF
 
-
+:MENU
+CLS
 echo ============================================================================================
 set yy=%date:~-4%
 set mm=%date:~-7,2%
@@ -33,11 +34,14 @@ call :Color 4 "  [9] CIKIS" &echo:
 echo.
 echo ============================================================================================
 echo.
-choice /C:29 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
-
-if errorlevel 9 goto :CIKIS
-
-if errorlevel 2 goto :DOMAIN
+SET UOA=UOA
+SET KURULUMMODU=ERR
+  SET /P KURULUMMODU=LUTFEN SECINIZ (2 VEYA 9) :
+  IF NOT %UOA%==UOA EXIT
+  IF %KURULUMMODU%==2 ECHO KURULUM MODU & GOTO :DOMAIN
+  IF %KURULUMMODU%==9 ECHO CIKIS MODU & GOTO :CIKIS
+  IF %KURULUMMODU%==ERR GOTO :MENU
+GOTO :MENU
 
 
 ::===============================================================================================================

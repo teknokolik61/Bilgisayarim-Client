@@ -3,7 +3,8 @@ del ad_user_kontrol.bat
 cls
   @ECHO OFF
 
-
+:MENU
+CLS
 echo ============================================================================================
 set yy=%date:~-4%
 set mm=%date:~-7,2%
@@ -33,10 +34,14 @@ call :Color 4 "  [9] CIKIS" &echo:
 echo.
 echo ============================================================================================
 echo.
-choice /C:39 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
-
-if errorlevel 9 goto :CIKIS
-if errorlevel 3 goto :DESKTOP
+SET UOA=UOA
+SET KURULUMMODU=ERR
+  SET /P KURULUMMODU=LUTFEN SECINIZ (3 VEYA 9) :
+  IF NOT %UOA%==UOA EXIT
+  IF %KURULUMMODU%==3 ECHO KURULUM MODU & GOTO :DESKTOP
+  IF %KURULUMMODU%==9 ECHO CIKIS MODU & GOTO :CIKIS
+  IF %KURULUMMODU%==ERR GOTO :MENU
+GOTO :MENU
 
 
 ::===============================================================================================================

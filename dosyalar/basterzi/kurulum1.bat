@@ -5,6 +5,8 @@ cls
   @ECHO OFF
 
 SET OFIS="basterzi"
+:MENU
+CLS
 echo ============================================================================================
 set yy=%date:~-4%
 set mm=%date:~-7,2%
@@ -34,10 +36,14 @@ call :Color 4 "  [9] CIKIS" &echo:
 echo.
 echo ============================================================================================
 echo.
-choice /C:12349 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
-
-if errorlevel 9 goto :CIKIS
-if errorlevel 1 goto :SOPHOS
+SET UOA=UOA
+SET KURULUMMODU=ERR
+  SET /P KURULUMMODU=LUTFEN SECINIZ (1 VEYA 9) :
+  IF NOT %UOA%==UOA EXIT
+  IF %KURULUMMODU%==1 ECHO KURULUM MODU & GOTO :SOPHOS
+  IF %KURULUMMODU%==9 ECHO CIKIS MODU & GOTO :CIKIS
+  IF %KURULUMMODU%==ERR GOTO :MENU
+GOTO :MENU
 :DOMAIN
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 del dc_login.bat
