@@ -38,14 +38,11 @@ SET UOA=UOA
 SET KURULUMMODU=ERR
   SET /P KURULUMMODU=LUTFEN SECINIZ (2 VEYA 9) :
   IF NOT %UOA%==UOA EXIT
-  IF %KURULUMMODU%==2 ECHO KURULUM MODU & GOTO :DOMAIN
+  IF %KURULUMMODU%==2 ECHO KURULUM MODU & GOTO :DOMAIN2
   IF %KURULUMMODU%==9 ECHO CIKIS MODU & GOTO :CIKIS
   IF %KURULUMMODU%==ERR GOTO :MENU
 GOTO :MENU
-
-
-::===============================================================================================================
-:DOMAIN
+:DOMAIN2
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 del dc_login.bat
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dc_login.bat
