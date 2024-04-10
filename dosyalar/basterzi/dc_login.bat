@@ -11,9 +11,13 @@ SET _fqdn2=%_computerDomain%
 echo %_fqdn%
 echo %_fqdn2%
 
-SET Dc_sorgu=bilgisayarim.local
-IF "%_fqdn2%" == bilgisayarim.local GOTO DEVAM
-IF NOT EXIST "%Dc_sorgu%" GOTO KUR45
+::SET Dc_sorgu=bilgisayarim.local
+::IF "%_fqdn2%" == bilgisayarim.local GOTO DEVAM
+::IF NOT EXIST "%Dc_sorgu%" GOTO KUR45
+
+@if %_fqdn2%==bilgisayarim.local GOTO :DEVAM
+IF NOT %_fqdn2%==mrc GOTO :KUR45
+
 
 :DEVAM
 TIMEOUT /T 1
