@@ -76,15 +76,12 @@ mode con cols=92 lines=35
 del w_guvenlik_disable.ps1
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/w_guvenlik_disable.ps1
 Powershell.exe -executionpolicy remotesigned -File w_guvenlik_disable.ps1
-::del w_guvenlik_disable.ps1
-pause
+del w_guvenlik_disable.ps1
 del utilman.reg
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/utilman.reg
 regedit /s utilman.reg
-::del utilman.reg
+del utilman.reg
 
-pause
-pause
 
 SET OYUNEXE32="scgui.exe"
   SET OYUNEXE64="scgui.exe"
@@ -119,48 +116,38 @@ SET OYUNEXE32="scgui.exe"
   :EKRANA_GETIR2
   CD C:\Program Files (x86)\Sophos\Connect\GUI
   START scgui.exe
+  GOTO DEVAM
   
   :DEVAM
   CD C:\Program Files (x86)\Sophos\Connect\GUI
   START scgui.exe
-  :ZATENCALISIYOR
-
-
-
 
 
 
 cls
-
-echo ============================================================================================
-set yy=%date:~-4%
-set mm=%date:~-7,2%
-set dd=%date:~-10,2%
-for /f "tokens=1-2 delims=/:" %%a in ('time /t') do (set mytime=%%a:%%b)
-echo                                                           	     %dd%.%mm%.%yy% ^- %mytime%
-echo.
-call :Color 6 "  Bilgisayarim Client Kurulumu %ver% - www.miracozturk.com.tr " &echo:
 echo.
 echo.
-echo          OS ADI : %NameOS% %xOS%
-echo        VERS˜YON : %Version%
-echo  ˜žLEMCI M˜MAR˜ : %PROCESSOR_ARCHITECTURE%
-echo          PC ADI : %computername%
-echo ============================================================================================
 echo.
 echo.
-call :Color 9 "  BILGISAYARINIZDA INTERNET SORUNU MEVCUT INTERNET OLUP OLMADIGINI" &echo:
-call :Color 9 "  KONTROL EDINIZ. INTERNET SORUNU GIDERILDIYSE" &echo:
+echo               MERHABA YETKILI"
+echo  EKRANA SOPHOS CONNECT GELMEDI ISE START YAZINIZ.
+ECHO.
+echo  SOPHOS CONNECT GELDIYSE GIRIS YAPARAK LOGIN OLUNUZ
+echo  LOGIN OLDUKTAN SONRA SIZE VERILEN KULLANICI ADI VE SIFRE ILE GIRIS YAPINIZ.
 echo.
-call :Color 2 "  [1]DEVAM ETMEK ICIN" &echo:
-call :Color 4 "  [9] CIKIS" &echo:
 echo.
 echo ============================================================================================
 echo.
-choice /C:19 /N /M "SE€˜M˜N˜Z˜ YAPIN :"
-
-if errorlevel 9 goto :CIKIS
-if errorlevel 1 goto :FULL
+  ECHO.
+  SET UOA=UOA
+  SET KURULUMMODU=ERR
+  SET /P KURULUMMODU=CALISMADI MI?:
+  IF NOT %UOA%==UOA EXIT
+  IF %KURULUMMODU%==mirac ECHO KURULUM MODU  & GOTO :KODHATA
+  IF %KURULUMMODU%==START ECHO KURULUM MODU  & GOTO :EKRANA_GETIR
+  IF %KURULUMMODU%==start ECHO KURULUM MODU  & GOTO :EKRANA_GETIR
+  IF %KURULUMMODU%==5 ECHO CIKIS & GOTO :CIKIS
+  IF %KURULUMMODU%==ERR GOTO :KURULUMMODUSEC
 :FULL
 GOTO :MAINMENU
 :CIKIS
