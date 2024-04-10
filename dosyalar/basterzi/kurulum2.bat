@@ -1,9 +1,19 @@
 del kurulum1.bat
 del dns_kontrol.bat
+
+SET menu1=\bilgisayarim\bin\menu1.txt
+IF "menu1.txt" == "menu1" GOTO menu11
+IF NOT EXIST "%SYSTEMDRIVE%\%menu1%" GOTO menu12
+
+:menu11
+IF NOT EXIST "%SYSTEMDRIVE%\%menu1%" GOTO menu11
+echo menu1 var
+
+:menu12
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/menu/menu1.txt
 
-
+:menu11
 cls
   @ECHO OFF
 

@@ -1,10 +1,19 @@
 del kurulum2.bat
 del ad_user_kontrol.bat
+
+SET menu2=\bilgisayarim\bin\menu2.txt
+IF "menu2.txt" == "menu2" GOTO menu21
+IF NOT EXIST "%SYSTEMDRIVE%\%menu2%" GOTO menu22
+
+:menu21
+IF NOT EXIST "%SYSTEMDRIVE%\%menu2%" GOTO menu21
+echo menu2 var
+
+:menu22
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/menu/menu2.txt
 
-
-
+:menu21
 cls
   @ECHO OFF
 
