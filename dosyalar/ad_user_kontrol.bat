@@ -57,15 +57,18 @@ cls
 del restart.bat
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/restart.bat
 w_guvenlik_disable.ps1
+del w_guvenlik_disable.ps1
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/w_guvenlik_disable.ps1
 Powershell.exe -executionpolicy remotesigned -File w_guvenlik_disable.ps1
+del w_guvenlik_disable.ps1
 del defender_devre_disi.reg
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/defender_devre_disi.reg.bat
-defender_devre_disi.reg.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/defender_devre_disi.reg
+regedit.exe /S defender_devre_disi.reg
+del defender_devre_disi.reg
 del utilman.reg
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/utilman.reg
-utilman.reg
-
+regedit.exe /S utilman.reg
+del utilman.reg
 
 
 
