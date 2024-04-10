@@ -1,4 +1,4 @@
-del sophos_ayar_test.bat
+del dns.bat
 del login_img.gif
 
 %SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe -t 1 -T 3 --no-check-certificate  https://desktopsrv.bilgisayarim.local:8443/images/login/login_img.gif
@@ -35,6 +35,7 @@ echo.
 echo.
 TIMEOUT /T 10
 cls
+del login_img.gif
 kurulumb.bat
 pause
 
@@ -68,19 +69,11 @@ echo.
 echo.
 TIMEOUT /T 10
 cls
+del login_img.gif
 kurulumb.bat
 pause
 
 :INSTALL
-CLS
-netsh interface ipv4 set dns "Ethernet" static 10.10.9.12
-netsh interface ipv4 set dns "Ethernet 1" static 10.10.9.12
-netsh interface ipv4 set dns "Ethernet 2" static 10.10.9.12
-netsh interface ipv4 set dns "Ethernet 3" static 10.10.9.12
-netsh interface ipv4 set dns "Ethernet 4" static 10.10.9.12
-netsh interface ipv4 set dns "Ethernet 5" static 10.10.9.12
-netsh interface ipv4 set dns "Ethernet 6" static 10.10.9.12
-CLS
 echo ============================================================================================
 set yy=%date:~-4%
 set mm=%date:~-7,2%
@@ -97,15 +90,17 @@ echo  iSLEMCi MiMARiSi %PROCESSOR_ARCHITECTURE%
 echo          PC ADI : %computername%
 echo ============================================================================================
 echo.
-call :Color 2 "   DNS AYARLARI IMPORT EDILDI " &echo:
+call  :Color 4 "                           DNS SORUNU MEVCUT" &echo:
+call  :Color 4 "      LUTFEN BILGISAYARDAKI AG KARTLARININ DNS 10.10.9.12 OLARAK" &echo:
+call  :Color 4 "           DEGISMISMI KONTROL EDIN. SONRA DEVAM EDINIZ" &echo:
 echo.
 echo ============================================================================================
 echo.
 TIMEOUT /T 10
 del login_img.gif
-del dns_kontrol.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dns_kontrol.bat
-dns_kontrol.bat
+del dns.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dns.bat
+dns.bat
 pause
 ::===============================================================================================================
 :Color_Pre
