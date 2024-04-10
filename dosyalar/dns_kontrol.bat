@@ -29,11 +29,13 @@ echo.
 echo.
 echo.
 call :Color 2 "   DNS AYARLARI IMPORT EDILMIS " &echo:
-call :Color 2 "   ANA SAYFAYA YONLENDIRILIYORSUNUZ(ASAMA 2 DEVAM EDINIZ). " &echo:
+call :Color 2 "   ANA SAYFAYA YONLENDIRILIYORSUNUZ " Color 7"(ASAMA 2 DEVAM EDINIZ)". &echo:
 echo.
 echo.
 echo.
 echo.
+
+pause
 TIMEOUT /T 10
 cls
 del login_img.gif
