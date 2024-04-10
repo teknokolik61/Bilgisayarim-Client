@@ -5,7 +5,7 @@ del sophos_ayar_test.bat
 
 @set ver=v9.8
 @set title=Bilgisayarim Client Mirac OZTURK
-@set sunucuvpn=
+@set sunucuvpn=1
 @set basterzivpn=1
 
 
