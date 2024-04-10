@@ -40,7 +40,7 @@ echo.
 echo.
 echo.
 echo.
-call :Color 2 "   DOMAIN LOGIN OLMUSTUR " &echo:
+call :Color 2 "   AD KULLANICISI ILE OTURUM ACILMIS." &echo:
 call :Color 2 "   ANA SAYFAYA YONLENDIRILIYORSUNUZ(ASAMA 3 DEVAM EDINIZ). " &echo:
 echo.
 echo.
