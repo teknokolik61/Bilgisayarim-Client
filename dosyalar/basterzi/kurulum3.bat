@@ -1,6 +1,8 @@
 del kurulum2.bat
 del ad_user_kontrol.bat
+del menu.bat
 
+  @ECHO OFF
 SET menu2=\bilgisayarim\bin\menu2.txt
 IF "menu2.txt" == "menu2" GOTO menu21
 IF NOT EXIST "%SYSTEMDRIVE%\%menu2%" GOTO menu22
@@ -13,7 +15,7 @@ echo menu2 var
 
 :menu21
 cls
-  @ECHO OFF
+
 
 :MENU
 CLS

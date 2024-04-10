@@ -1,5 +1,7 @@
 del kurulum1.bat
 del dns_kontrol.bat
+del menu.bat
+  @ECHO OFF
 
 SET menu1=\bilgisayarim\bin\menu1.txt
 IF "menu1.txt" == "menu1" GOTO menu11
@@ -12,7 +14,7 @@ echo menu1 var
 
 :menu11
 cls
-  @ECHO OFF
+
 
 :MENU
 CLS

@@ -1,6 +1,8 @@
 del baslangic.bat
 del dns.bat
 del ad_user_kontrol.bat
+del menu.bat
+
 cls
   @ECHO OFF
 
