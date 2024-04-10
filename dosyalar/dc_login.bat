@@ -1,4 +1,4 @@
-del dc_login.bat
+del dns.bat
 
 @echo off
 FOR /F "usebackq tokens=*" %%a IN (`wmic.exe COMPUTERSYSTEM GET DOMAIN /Value`) DO (
@@ -11,15 +11,16 @@ SET _fqdn2=%_computerDomain%
 echo %_fqdn%
 echo %_fqdn2%
 
+SET Dc_sorgu=bilgisayarim.local
+IF "%_fqdn2%" == bilgisayarim.local GOTO DEVAM
+IF NOT EXIST "%Dc_sorgu%" GOTO KUR45
+
+::@if %_fqdn2%==bilgisayarim.local GOTO :DEVAM
+::IF NOT %_fqdn2%==mrc GOTO :KUR45
 
 
-
-SET Domain_Kontrol=bilgisayarim.local
-IF "%_fqdn2%" == "bilgisayarim.local" GOTO bilgisayarim.local
-IF NOT EXIST "%Domain_Kontrol%" GOTO KUR46
-
-
-:bilgisayarim.local
+:DEVAM
+TIMEOUT /T 1
 cls
 echo ============================================================================================
 set yy=%date:~-4%
@@ -35,24 +36,29 @@ echo          OS ADI : %NameOS% %xOS%
 echo        VERS˜iON : %Version%
 echo  islemci Mimarisi: %PROCESSOR_ARCHITECTURE%
 echo          PC ADI : %computername%
+echo      DOMAIN ADI: %_fqdn2%
 echo ============================================================================================
 echo.
 echo.
 echo.
 echo.
-call :Color 2 "   DOMAIN LOGIN OLMUSTUR " &echo:
-call :Color 2 "   DOMAIN USER KONTROL SAYFASINA YONLENDIRILIYORSUNUZ. " &echo:
+ECHO                   DOMAIN LOGIN OLMUSTUR 
+ECHO    DOMAIN USER KONTROL SAYFASINA YONLENDIRILIYORSUNUZ. 
+ECHO    Mirac OZTURK
+
+::call :Color 2 "   DOMAIN LOGIN OLMUSTUR " &echo:
+::call :Color 2 "   DOMAIN USER KONTROL SAYFASINA YONLENDIRILIYORSUNUZ. " &echo:
 echo.
 echo.
 echo.
 echo.
 TIMEOUT /T 5
-del ad_user_kontrol.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/ad_user_kontrol.bat
+del domain_test.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/domain_test.bat
 cls
-ad_user_kontrol.bat
+domain_test.bat
 
-:KUR46
+:KUR45
 echo ============================================================================================
 set yy=%date:~-4%
 set mm=%date:~-7,2%
@@ -67,6 +73,7 @@ echo          OS ADI : %NameOS% %xOS%
 echo        VERS˜YON : %Version%
 echo  iSLEMCi MiMARiSi %PROCESSOR_ARCHITECTURE%
 echo          PC ADI : %computername%
+echo      DOMAIN ADI: %_fqdn2%
 echo ============================================================================================
 echo.
 call  :Color 9 "              DOMAIN LOGIN OLUNAMAMISTIR." &echo:
@@ -75,10 +82,19 @@ call  :Color 4 "  LUTFEN KULLANICI ADI SIFREYI DOGRU YAZDIGINIZA EMIN OLUNUZ" &e
 echo.
 echo ============================================================================================
 TIMEOUT /T 10
-del dc_login.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/basterzi/dc_login.bat
 cls
-dc_login.bat
+del dns.bat
+del dc_login.ps1
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/%OFIS%/dc_login.ps1
+cls
+
+Powershell.exe -executionpolicy remotesigned -File dc_login.ps1
+
+TIMEOUT /T 10
+del domain_test.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/domain_test.bat
+cls
+domain_test.bat
 
 
 ::===============================================================================================================
@@ -93,15 +109,3 @@ mode con: cols=%1 lines=%2
 powershell -noprofile "$W=(get-host).ui.rawui; $B=$W.buffersize; $B.height=%3; $W.buffersize=$B"
 goto :EOF
 ::===============================================================================================================
-
-
-
-
-
-
-
-
-
-
-
-pause
