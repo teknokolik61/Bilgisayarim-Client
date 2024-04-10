@@ -46,7 +46,7 @@ if errorlevel 2 goto :DOMAIN
 :DOMAIN
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 del dc_login.bat
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/basterzi/dc_login.bat
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dc_login.bat
 dc_login.bat
 ..\setup.bat
 pause
