@@ -20,6 +20,7 @@ echo          OS ADI : %NameOS% %xOS%
 echo        VERS˜iON : %Version%
 echo  islemci Mimarisi: %PROCESSOR_ARCHITECTURE%
 echo          PC ADI : %computername%
+echo SUNUCU SOPHOS V : ayar%sunucuvpn%
 echo ============================================================================================
 echo.
 echo.
@@ -52,6 +53,7 @@ echo          OS ADI : %NameOS% %xOS%
 echo        VERS˜iON : %Version%
 echo  islemci Mimarisi: %PROCESSOR_ARCHITECTURE%
 echo          PC ADI : %computername%
+echo SUNUCU SOPHOS V : ayar%sunucuvpn%
 echo ============================================================================================
 echo.
 echo.
@@ -105,6 +107,7 @@ echo          OS ADI : %NameOS% %xOS%
 echo        VERS˜iON : %Version%
 echo  islemci Mimarisi: %PROCESSOR_ARCHITECTURE%
 echo          PC ADI : %computername%
+echo SUNUCU SOPHOS V : ayar%sunucuvpn%
 echo ============================================================================================
 echo.
 echo.
