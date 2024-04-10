@@ -24,13 +24,13 @@ echo          PC ADI : %computername%
 echo ============================================================================================
 echo.
 echo.
-call :Color 3 "  [1] SOPHOS CLIENT KURULUMU" &   call :Color 2 "(BU MENU KURULACAK)" &echo:
+call :Color 3 "  [1] SOPHOS CLIENT KURULUMU" &   call :Color 2 "(BU MENU KURULACAK) " &echo:
 echo.
-call :Color 9 "  [2] DOMAIN KATILMAK" &   call :Color 4 "(KURULMADI)" &echo:
+call :Color 9 "  [2] DOMAIN KATILMAK" &   call :Color 4 "(KURULMADI) " &echo:
 echo.
 call :Color 5 "  [3] DESKTOP MANAGER INSTALL" &   call :Color 4 "(KURULMADI) " &echo:
 echo.
-call :Color 6 "  [4] SANDIK KURULUMU" &   call :Color 4 "(KURULMADI)" &echo:
+call :Color 6 "  [4] SANDIK KURULUMU" &   call :Color 4 "(KURULMADI) " &echo:
 echo.
 call :Color 4 "  [9] CIKIS" &echo:
 echo.
