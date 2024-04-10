@@ -9,9 +9,6 @@ IF NOT EXIST "%SYSTEMDRIVE%\%menu1%" GOTO menu12
 IF NOT EXIST "%SYSTEMDRIVE%\%menu1%" GOTO menu11
 echo menu1 var
 
-:menu12
-cd %SYSTEMDRIVE%\Bilgisayarim\bin\
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/menu/menu1.txt
 
 :menu11
 cls
@@ -72,6 +69,11 @@ TEMPmessage.vbs
 mode con cols=55 lines=4
 del kurulum2.bat
 
+
+:menu12
+cd %SYSTEMDRIVE%\Bilgisayarim\bin\
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/menu/menu1.txt
+goto menu11
 ::===============================================================================================================
 :Color_Pre
 for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (set "DEL=%%a") &exit /b
