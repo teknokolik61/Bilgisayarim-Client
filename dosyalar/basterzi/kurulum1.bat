@@ -65,9 +65,7 @@ pause
 echo MSGBOX "Güle Güle"  > %systemdrive%\bilgisayarim\bin\TEMPmessage.vbs
 TEMPmessage.vbs
 mode con cols=55 lines=4
-echo.
-echo Dosyalar temp dizininden siliniyor...
-echo.
+del kurulum1.bat
 
 ::===============================================================================================================
 :Color_Pre
