@@ -5,9 +5,8 @@ del sophos_ayar_test.bat
 @echo off
 @setlocal DisableDelayedExpansion
 cls
-@set ver=v9.8
 mode con cols=78 lines=6
-title Bilgisayarim Client Mirac OZTURK %ver%
+title %title% %ver%
 cd /d "%~dp0"
 if "%~1"=="-suite" goto :MAINMENU
 echo.
