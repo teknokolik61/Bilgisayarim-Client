@@ -42,13 +42,16 @@ echo.
 echo.
 echo.
 call :Color 2 "   DOMAIN LOGIN OLMUSTUR " &echo:
-call :Color 2 "   Ana Sayfaya Yonlendiriliyorsunuz " &echo:
+call :Color 2 "   DOMAIN USER KONTROL SAYFASINA YONLENDIRILIYORSUNUZ. " &echo:
 echo.
 echo.
 echo.
 echo.
 TIMEOUT /T 5
-kurulumb.bat
+del ad_user_kontrol.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/ad_user_kontrol.bat
+cls
+ad_user_kontrol.bat
 
 :INSTALL
 echo ============================================================================================
