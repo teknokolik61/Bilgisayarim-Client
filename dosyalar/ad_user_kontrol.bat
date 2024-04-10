@@ -1,3 +1,5 @@
+del dc_login.bat
+
 @echo off
 FOR /F "usebackq tokens=*" %%a IN (`wmic.exe COMPUTERSYSTEM GET DOMAIN /Value`) DO (
       @((ECHO %%a | findstr /i /c:"Domain=") && SET _str=%%a) > NUL 2>&1
@@ -20,8 +22,32 @@ IF NOT EXIST "%Ad_user_Kontrol%" GOTO INSTALL
 :\\DCSRV
 
 cls
-ECHO DCSRV TEST
-PAUSE
+echo ============================================================================================
+set yy=%date:~-4%
+set mm=%date:~-7,2%
+set dd=%date:~-10,2%
+for /f "tokens=1-2 delims=/:" %%a in ('time /t') do (set mytime=%%a:%%b)
+echo                                                           	     %dd%.%mm%.%yy% ^- %mytime%
+echo.
+call :Color 6 "  Bilgisayarim Client Kurulumu %ver% - www.miracozturk.com.tr " &echo:
+echo.
+echo.
+echo          OS ADI : %NameOS% %xOS%
+echo        VERS˜iON : %Version%
+echo  islemci Mimarisi: %PROCESSOR_ARCHITECTURE%
+echo          PC ADI : %computername%
+echo ============================================================================================
+echo.
+echo.
+echo.
+echo.
+call :Color 2 "   DOMAIN LOGIN OLMUSTUR " &echo:
+call :Color 2 "   ANA SAYFAYA YONLENDIRILIYORSUNUZ(ASAMA 3 DEVAM EDINIZ). " &echo:
+echo.
+echo.
+echo.
+echo.
+TIMEOUT /T 5
 
 :INSTALL
 ECHO MERHABA DOMAIN CONTROLERIN KULLANICI ADI ILE GIRIS YAPILMAMIS
