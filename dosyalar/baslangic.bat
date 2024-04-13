@@ -1,4 +1,4 @@
-del ..\kurulum.bat
+del ..\Kurulum.bat
 
 
   ::@chcp 65001
