@@ -8,9 +8,6 @@ del sophos_ayar_test.bat
 @set githuburl=https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/
 @set lisansurl=https://www.miracozturk.com.tr/lisans/
 @set sunucuvpn=1
-@set basterzivpn=1
-@set kackarvpn=1
-@set evvpn=1
 
 @echo off
 @setlocal DisableDelayedExpansion
