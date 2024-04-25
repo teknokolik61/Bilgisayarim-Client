@@ -60,7 +60,6 @@ GOTO :KURULUMMODUSEC
   :LISANS
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 del lisans.bat
-
 ::%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/menu.bat
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://www.miracozturk.com.tr/lisans/%KURULUMMODU%.bat
 %KURULUMMODU%.bat

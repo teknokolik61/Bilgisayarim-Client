@@ -76,3 +76,5 @@ kurulum5.bat
 del kurulum6.bat
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/%OFIS%/kurulum6.bat
 kurulum6.bat
+cls
+pause
