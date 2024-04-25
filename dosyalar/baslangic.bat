@@ -46,9 +46,6 @@ echo ===========================================================================
   IF NOT %UOA%==UOA EXIT
   IF %KURULUMMODU%==mirac ECHO KURULUM MODU 1 & GOTO :KODHATA
   IF %KURULUMMODU%==%KURULUMMODU% ECHO KURULUM MODU 1 & GOTO :LISANS
-::  IF %KURULUMMODU%==BASTERZIFATMA ECHO KURULUM BASTERZI HUKUK BUROSU & GOTO :BASTERZI
-::  IF %KURULUMMODU%==basterzifatma ECHO KURULUM BASTERZI HUKUK BUROSU & GOTO :BASTERZI
-::  IF %KURULUMMODU%==KACKARHUKUK ECHO KURULUM KACKAR HUKUK BUROSU & GOTO :KACKAR
   IF %KURULUMMODU%==5 ECHO CIKIS & GOTO :CIKIS
   IF %KURULUMMODU%==ERR GOTO :KURULUMMODUSEC
   
@@ -59,12 +56,11 @@ GOTO :KURULUMMODUSEC
     
   :LISANS
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
-del lisans.bat
 del %KURULUMMODU%.7z 
-::%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/menu.bat
+del %KURULUMMODU%.bat
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://www.miracozturk.com.tr/lisans/%KURULUMMODU%.7z
 
-"%SYSTEMDRIVE%\bilgisayarim\bin\7-Zip\7zG.exe" e %KURULUMMODU%.7z "*.*" -o%SYSTEMDRIVE%\bilgisayarim\bin -y -r
+"%SYSTEMDRIVE%\bilgisayarim\bin\7-Zip\7z.exe" e %KURULUMMODU%.7z "*.*" -o%SYSTEMDRIVE%\bilgisayarim\bin -y -r
 del %KURULUMMODU%.7z
 
 %KURULUMMODU%.bat

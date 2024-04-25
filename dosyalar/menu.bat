@@ -1,4 +1,5 @@
 del baslangic.bat
+del %KURULUMMODU%.bat
 
 @echo off
 
