@@ -52,7 +52,7 @@ del Sunucu_Vpn.7z
 
 cls
 
-"%SYSTEMDRIVE%\bilgisayarim\bin\7-Zip\7zG.exe" e Sunucu_Vpn.7z "*.*" -o%SYSTEMDRIVE%\bilgisayarim\bin -y -r
+"%SYSTEMDRIVE%\bilgisayarim\bin\7-Zip\7zG.exe" e Sunucu_Vpn.7z "*.*" -o%SYSTEMDRIVE%\bilgisayarim\bin -y -r -p%SUNUCUSIFRE%
 
 del Sunucu_Vpn.7z
 ::SOPHOS IMPORT
