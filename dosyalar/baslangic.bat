@@ -59,7 +59,7 @@ GOTO :KURULUMMODUSEC
     
   :LISANS
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
-SET OFIS="basterzi"
+SET OFIS=%KURULUMMODU%
 del menu.bat
 %SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/menu.bat
 menu.bat
