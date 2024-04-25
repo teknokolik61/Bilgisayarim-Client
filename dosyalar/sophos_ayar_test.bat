@@ -35,7 +35,7 @@ echo.
 TIMEOUT /T 10
 cls
 del dns.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dns.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/dns.bat
 dns.bat
 cls
 
@@ -70,7 +70,7 @@ echo.
 TIMEOUT /T 10
 cls
 del dns.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dns.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/dns.bat
 dns.bat
 cls
 

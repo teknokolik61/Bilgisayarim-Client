@@ -34,7 +34,7 @@ TIMEOUT /T 10
 cls
 cd %SYSTEMDRIVE%\Bilgisayarim\Bin
 del sophos_ayar.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_ayar.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/sophos_ayar.bat
 sophos_ayar.bat
 cls
 
@@ -70,7 +70,7 @@ TIMEOUT /T 10
 cls
 cd %SYSTEMDRIVE%\Bilgisayarim\Bin
 del sophos_ayar.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_ayar.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/sophos_ayar.bat
 sophos_ayar.bat
 cls
 
@@ -175,7 +175,7 @@ TIMEOUT /T 10
 cls
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 del SophosConnect.msi
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/SophosConnect.msi
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/SophosConnect.msi
 
 msiexec.exe /i %SYSTEMDRIVE%\Bilgisayarim\bin\SophosConnect /QN
 Popd
@@ -184,7 +184,7 @@ cls
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 del SophosConnect.msi
 del sophos_ayar.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_ayar.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/sophos_ayar.bat
 sophos_ayar.bat
 
 
@@ -200,7 +200,7 @@ sophos_ayar.bat
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 del SophosConnect.msi
 del sophos_ayar.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_ayar.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/sophos_ayar.bat
 
 sophos_ayar.bat
 cls

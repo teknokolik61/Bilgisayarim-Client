@@ -48,7 +48,7 @@ echo.
 echo.
 TIMEOUT /T 5
 del ad_user_kontrol.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/ad_user_kontrol.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/ad_user_kontrol.bat
 cls
 ad_user_kontrol.bat
 
@@ -76,8 +76,8 @@ echo.
 echo ============================================================================================
 TIMEOUT /T 10
 del dc_login.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dc_login.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dc_login.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/dc_login.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/dc_login.bat
 cls
 dc_login.bat
 

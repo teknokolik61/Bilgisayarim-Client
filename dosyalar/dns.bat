@@ -36,7 +36,7 @@ echo.
 TIMEOUT /T 10
 del login_img.gif
 del dns_kontrol.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dns_kontrol.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/dns_kontrol.bat
 dns_kontrol.bat
 
 :X86_PROG
@@ -70,7 +70,7 @@ echo.
 TIMEOUT /T 5
 del login_img.gif
 del dns_kontrol.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dns_kontrol.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/dns_kontrol.bat
 dns_kontrol.bat
 
 :INSTALL
@@ -106,7 +106,7 @@ echo.
 TIMEOUT /T 10
 del login_img.gif
 del dns_kontrol.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dns_kontrol.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/dns_kontrol.bat
 dns_kontrol.bat
 pause
 ::===============================================================================================================

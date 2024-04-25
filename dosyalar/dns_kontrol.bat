@@ -38,7 +38,7 @@ TIMEOUT /T 10
 cls
 del login_img.gif
 del kurulum2.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/%OFIS%/kurulum2.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/%OFIS%/kurulum2.bat
 kurulum2.bat
 pause
 
@@ -75,7 +75,7 @@ TIMEOUT /T 10
 cls
 del login_img.gif
 del kurulum2.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/%OFIS%/kurulum2.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/%OFIS%/kurulum2.bat
 kurulum2.bat
 pause
 
@@ -105,7 +105,7 @@ echo.
 TIMEOUT /T 10
 del login_img.gif
 del dns.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/dns.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/dns.bat
 dns.bat
 pause
 ::===============================================================================================================

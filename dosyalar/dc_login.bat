@@ -49,7 +49,7 @@ echo.
 echo.
 TIMEOUT /T 5
 del domain_test.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/domain_test.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/domain_test.bat
 cls
 domain_test.bat
 
@@ -80,14 +80,14 @@ TIMEOUT /T 10
 cls
 del dns.bat
 del dc_login.ps1
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/%OFIS%/dc_login.ps1
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/%OFIS%/dc_login.ps1
 cls
 
 Powershell.exe -executionpolicy remotesigned -File dc_login.ps1
 
 TIMEOUT /T 10
 del domain_test.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/domain_test.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/domain_test.bat
 cls
 domain_test.bat
 

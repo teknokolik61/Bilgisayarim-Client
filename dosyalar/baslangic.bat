@@ -58,7 +58,7 @@ GOTO :KURULUMMODUSEC
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 del %KURULUMMODU%.7z 
 del %KURULUMMODU%.bat
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://www.miracozturk.com.tr/lisans/%KURULUMMODU%.7z
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe %lisansurl%%KURULUMMODU%.7z
 
 "%SYSTEMDRIVE%\bilgisayarim\bin\7-Zip\7z.exe" e %KURULUMMODU%.7z "*.*" -o%SYSTEMDRIVE%\bilgisayarim\bin -y -r
 del %KURULUMMODU%.7z

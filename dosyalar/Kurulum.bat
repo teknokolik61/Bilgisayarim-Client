@@ -5,6 +5,8 @@ del sophos_ayar_test.bat
 
 @set ver=v9.8
 @set title=Bilgisayarim Client Mirac OZTURK
+@set githuburl=https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/
+@set lisansurl=https://www.miracozturk.com.tr/lisans/
 @set sunucuvpn=1
 @set basterzivpn=1
 @set kackarvpn=1
@@ -79,7 +81,7 @@ title Bilgisayarim Client Mirac OZTURK %ver%
 mode con cols=92 lines=35
 
 del baslangic.bat
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/baslangic.bat
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe %githuburl%dosyalar/baslangic.bat
 baslangic.bat
 cls
 

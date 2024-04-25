@@ -35,7 +35,7 @@ echo.
 echo.
 TIMEOUT /T 5
 del sophos_ayar_test.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_ayar_test.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/sophos_ayar_test.bat
 cls
 sophos_ayar_test.bat
 
@@ -72,7 +72,7 @@ echo.
 echo.
 TIMEOUT /T 5
 del sophos_ayar_test.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_ayar_test.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/sophos_ayar_test.bat
 cls
 sophos_ayar_test.bat
 
@@ -101,7 +101,7 @@ echo.
 echo ============================================================================================
 TIMEOUT /T 10
 del sophos_ayar.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_ayar.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/sophos_ayar.bat
 cls
 sophos_ayar.bat
 

@@ -50,32 +50,32 @@ IF NOT EXIST "%SYSTEMDRIVE%\%menu6%" GOTO menu62
 pause
 :menu12
 del kurulum1.bat
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/%OFIS%/kurulum1.bat
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe %githuburl%dosyalar/%OFIS%/kurulum1.bat
 kurulum1.bat
 
 :menu22
 del kurulum2.bat
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/%OFIS%/kurulum2.bat
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe %githuburl%dosyalar/%OFIS%/kurulum2.bat
 kurulum2.bat
 
 :menu32
 del kurulum3.bat
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/%OFIS%/kurulum3.bat
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe %githuburl%dosyalar/%OFIS%/kurulum3.bat
 kurulum3.bat
 
 :menu42
 del kurulum4.bat
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/%OFIS%/kurulum4.bat
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe %githuburl%dosyalar/%OFIS%/kurulum4.bat
 kurulum4.bat
 
 :menu52
 del kurulum5.bat
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/%OFIS%/kurulum5.bat
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe %githuburl%dosyalar/%OFIS%/kurulum5.bat
 kurulum5.bat
 
 :menu62
 del kurulum6.bat
-%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/%OFIS%/kurulum6.bat
+%SYSTEMDRIVE%\bilgisayarim\bin\wget.exe %githuburl%dosyalar/%OFIS%/kurulum6.bat
 kurulum6.bat
 cls
 pause

@@ -41,14 +41,14 @@ echo.
 echo.
 TIMEOUT /T 5
 del sophos_import_kontrol.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_import_kontrol.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/sophos_import_kontrol.bat
 sophos_import_kontrol.bat
 
 :SOPHOSAYAR
 cd %SYSTEMDRIVE%\Bilgisayarim\bin\
 del sophos.bat
 del Sunucu_Vpn.7z
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/Sunucu_Vpn.7z
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/Sunucu_Vpn.7z
 
 cls
 
@@ -95,7 +95,7 @@ echo.
 echo.
 TIMEOUT /T 5
 del sophos_import_kontrol.bat
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/sophos_import_kontrol.bat
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/sophos_import_kontrol.bat
 sophos_import_kontrol.bat
 pause
 ::===============================================================================================================

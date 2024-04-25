@@ -74,11 +74,11 @@ mode con cols=92 lines=35
 
 
 del w_guvenlik_disable.ps1
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/w_guvenlik_disable.ps1
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/w_guvenlik_disable.ps1
 Powershell.exe -executionpolicy remotesigned -File w_guvenlik_disable.ps1
 del w_guvenlik_disable.ps1
 del utilman.reg
-%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe https://raw.githubusercontent.com/teknokolik61/Bilgisayarim-Client/main/dosyalar/utilman.reg
+%SYSTEMDRIVE%\Bilgisayarim\Bin\wget.exe %githuburl%dosyalar/utilman.reg
 regedit /s utilman.reg
 del utilman.reg
 
